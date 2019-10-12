@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		684EDDB92351FE8F0050EFB7 /* kai.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDB32351FE8E0050EFB7 /* kai.png */; };
+		684EDDBE2351FFC80050EFB7 /* DBBookAndAudioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 684EDDBD2351FFC80050EFB7 /* DBBookAndAudioModel.m */; };
+		684EDDC3235200110050EFB7 /* DBBookAndAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 684EDDC2235200110050EFB7 /* DBBookAndAudioView.m */; };
+		684EDDC5235208C80050EFB7 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDC4235208C70050EFB7 /* home.png */; };
+		684EDDCA23520CD40050EFB7 /* shu.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDC623520CD30050EFB7 /* shu.png */; };
+		684EDDCB23520CD40050EFB7 /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDC723520CD40050EFB7 /* main.png */; };
+		684EDDCC23520CD40050EFB7 /* market.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDC823520CD40050EFB7 /* market.png */; };
+		684EDDCD23520CD40050EFB7 /* group.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDC923520CD40050EFB7 /* group.png */; };
+		684EDDCF235229510050EFB7 /* code.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDCE2352294F0050EFB7 /* code.png */; };
+		684EDDD123522B640050EFB7 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDD023522B630050EFB7 /* mail.png */; };
+		684EDDD323522B710050EFB7 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDD223522B710050EFB7 /* search.png */; };
+		68D2BB1823506A4000B2FC77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB1723506A4000B2FC77 /* AppDelegate.m */; };
+		68D2BB1B23506A4000B2FC77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB1A23506A4000B2FC77 /* ViewController.m */; };
+		68D2BB1E23506A4000B2FC77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D2BB1C23506A4000B2FC77 /* Main.storyboard */; };
+		68D2BB2023506A4800B2FC77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D2BB1F23506A4800B2FC77 /* Assets.xcassets */; };
+		68D2BB2323506A4800B2FC77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D2BB2123506A4800B2FC77 /* LaunchScreen.storyboard */; };
+		68D2BB2623506A4800B2FC77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB2523506A4800B2FC77 /* main.m */; };
+		68D2BB3023506A4800B2FC77 /* doubanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB2F23506A4800B2FC77 /* doubanTests.m */; };
+		68D2BB3B23506A4800B2FC77 /* doubanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB3A23506A4800B2FC77 /* doubanUITests.m */; };
+		68D2BB4F2350748C00B2FC77 /* DBBookAndAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB4E2350748C00B2FC77 /* DBBookAndAudioViewController.m */; };
+		68D2BB522350751900B2FC77 /* DBHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB512350751900B2FC77 /* DBHomePageViewController.m */; };
+		68D2BB562350754000B2FC77 /* DBGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB552350754000B2FC77 /* DBGroupViewController.m */; };
+		68D2BB5A235075A300B2FC77 /* DBMarketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB59235075A300B2FC77 /* DBMarketViewController.m */; };
+		68D2BB5E235075CE00B2FC77 /* DBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB5D235075CE00B2FC77 /* DBMainViewController.m */; };
+		68D2BB642350768300B2FC77 /* DBHomePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB632350768300B2FC77 /* DBHomePageView.m */; };
+		68D2BB67235076B500B2FC77 /* DBHomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB66235076B500B2FC77 /* DBHomePageModel.m */; };
+		ADAF5D66B41D3B2D64F88497 /* libPods-douban.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6BF43981E988DAB9A17DBF /* libPods-douban.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68D2BB2C23506A4800B2FC77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68D2BB0B23506A3F00B2FC77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68D2BB1223506A4000B2FC77;
+			remoteInfo = douban;
+		};
+		68D2BB3723506A4800B2FC77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68D2BB0B23506A3F00B2FC77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68D2BB1223506A4000B2FC77;
+			remoteInfo = douban;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B9A0675EC8F7126B4592BB1 /* Pods-douban.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douban.debug.xcconfig"; path = "Target Support Files/Pods-douban/Pods-douban.debug.xcconfig"; sourceTree = "<group>"; };
+		3C6BF43981E988DAB9A17DBF /* libPods-douban.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-douban.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		684EDDB32351FE8E0050EFB7 /* kai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kai.png; sourceTree = "<group>"; };
+		684EDDBC2351FFC80050EFB7 /* DBBookAndAudioModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBBookAndAudioModel.h; sourceTree = "<group>"; };
+		684EDDBD2351FFC80050EFB7 /* DBBookAndAudioModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBBookAndAudioModel.m; sourceTree = "<group>"; };
+		684EDDC1235200110050EFB7 /* DBBookAndAudioView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBBookAndAudioView.h; sourceTree = "<group>"; };
+		684EDDC2235200110050EFB7 /* DBBookAndAudioView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBBookAndAudioView.m; sourceTree = "<group>"; };
+		684EDDC4235208C70050EFB7 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		684EDDC623520CD30050EFB7 /* shu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shu.png; sourceTree = "<group>"; };
+		684EDDC723520CD40050EFB7 /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
+		684EDDC823520CD40050EFB7 /* market.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = market.png; sourceTree = "<group>"; };
+		684EDDC923520CD40050EFB7 /* group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group.png; sourceTree = "<group>"; };
+		684EDDCE2352294F0050EFB7 /* code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code.png; sourceTree = "<group>"; };
+		684EDDD023522B630050EFB7 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
+		684EDDD223522B710050EFB7 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		68D2BB1323506A4000B2FC77 /* douban.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = douban.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68D2BB1623506A4000B2FC77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		68D2BB1723506A4000B2FC77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		68D2BB1923506A4000B2FC77 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		68D2BB1A23506A4000B2FC77 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		68D2BB1D23506A4000B2FC77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68D2BB1F23506A4800B2FC77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68D2BB2223506A4800B2FC77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68D2BB2423506A4800B2FC77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68D2BB2523506A4800B2FC77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68D2BB2B23506A4800B2FC77 /* doubanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = doubanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68D2BB2F23506A4800B2FC77 /* doubanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = doubanTests.m; sourceTree = "<group>"; };
+		68D2BB3123506A4800B2FC77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68D2BB3623506A4800B2FC77 /* doubanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = doubanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68D2BB3A23506A4800B2FC77 /* doubanUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = doubanUITests.m; sourceTree = "<group>"; };
+		68D2BB3C23506A4800B2FC77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68D2BB4D2350748C00B2FC77 /* DBBookAndAudioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBBookAndAudioViewController.h; sourceTree = "<group>"; };
+		68D2BB4E2350748C00B2FC77 /* DBBookAndAudioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBBookAndAudioViewController.m; sourceTree = "<group>"; };
+		68D2BB502350751900B2FC77 /* DBHomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBHomePageViewController.h; sourceTree = "<group>"; };
+		68D2BB512350751900B2FC77 /* DBHomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBHomePageViewController.m; sourceTree = "<group>"; };
+		68D2BB542350754000B2FC77 /* DBGroupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBGroupViewController.h; sourceTree = "<group>"; };
+		68D2BB552350754000B2FC77 /* DBGroupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBGroupViewController.m; sourceTree = "<group>"; };
+		68D2BB58235075A300B2FC77 /* DBMarketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBMarketViewController.h; sourceTree = "<group>"; };
+		68D2BB59235075A300B2FC77 /* DBMarketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBMarketViewController.m; sourceTree = "<group>"; };
+		68D2BB5C235075CE00B2FC77 /* DBMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBMainViewController.h; sourceTree = "<group>"; };
+		68D2BB5D235075CE00B2FC77 /* DBMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBMainViewController.m; sourceTree = "<group>"; };
+		68D2BB622350768300B2FC77 /* DBHomePageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBHomePageView.h; sourceTree = "<group>"; };
+		68D2BB632350768300B2FC77 /* DBHomePageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBHomePageView.m; sourceTree = "<group>"; };
+		68D2BB65235076B500B2FC77 /* DBHomePageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBHomePageModel.h; sourceTree = "<group>"; };
+		68D2BB66235076B500B2FC77 /* DBHomePageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBHomePageModel.m; sourceTree = "<group>"; };
+		729E5E826500B1CDC7BD8F9A /* Pods-douban.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douban.release.xcconfig"; path = "Target Support Files/Pods-douban/Pods-douban.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68D2BB1023506A4000B2FC77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADAF5D66B41D3B2D64F88497 /* libPods-douban.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D2BB2823506A4800B2FC77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D2BB3323506A4800B2FC77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C405118F49634649C035893 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C6BF43981E988DAB9A17DBF /* libPods-douban.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		684EDDBA2351FE9A0050EFB7 /* 图 */ = {
+			isa = PBXGroup;
+			children = (
+				684EDDC4235208C70050EFB7 /* home.png */,
+				684EDDB32351FE8E0050EFB7 /* kai.png */,
+				684EDDC923520CD40050EFB7 /* group.png */,
+				684EDDC723520CD40050EFB7 /* main.png */,
+				684EDDC823520CD40050EFB7 /* market.png */,
+				684EDDC623520CD30050EFB7 /* shu.png */,
+			);
+			path = "图";
+			sourceTree = "<group>";
+		};
+		684EDDBB2351FF900050EFB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				684EDDBC2351FFC80050EFB7 /* DBBookAndAudioModel.h */,
+				684EDDBD2351FFC80050EFB7 /* DBBookAndAudioModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		684EDDBF2351FFDC0050EFB7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				68D2BB4D2350748C00B2FC77 /* DBBookAndAudioViewController.h */,
+				68D2BB4E2350748C00B2FC77 /* DBBookAndAudioViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		684EDDC02351FFEF0050EFB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				684EDDC1235200110050EFB7 /* DBBookAndAudioView.h */,
+				684EDDC2235200110050EFB7 /* DBBookAndAudioView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		68D2BB0A23506A3F00B2FC77 = {
+			isa = PBXGroup;
+			children = (
+				68D2BB1523506A4000B2FC77 /* douban */,
+				68D2BB2E23506A4800B2FC77 /* doubanTests */,
+				68D2BB3923506A4800B2FC77 /* doubanUITests */,
+				68D2BB1423506A4000B2FC77 /* Products */,
+				EBDF57634E779077A6FDC67B /* Pods */,
+				3C405118F49634649C035893 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		68D2BB1423506A4000B2FC77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68D2BB1323506A4000B2FC77 /* douban.app */,
+				68D2BB2B23506A4800B2FC77 /* doubanTests.xctest */,
+				68D2BB3623506A4800B2FC77 /* doubanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68D2BB1523506A4000B2FC77 /* douban */ = {
+			isa = PBXGroup;
+			children = (
+				684EDDBA2351FE9A0050EFB7 /* 图 */,
+				68D2BB1623506A4000B2FC77 /* AppDelegate.h */,
+				68D2BB1723506A4000B2FC77 /* AppDelegate.m */,
+				68D2BB1923506A4000B2FC77 /* ViewController.h */,
+				68D2BB1A23506A4000B2FC77 /* ViewController.m */,
+				68D2BB48235073D500B2FC77 /* HomePage */,
+				68D2BB4C2350743500B2FC77 /* BookAndAudioPage */,
+				68D2BB532350751E00B2FC77 /* Group */,
+				68D2BB572350755300B2FC77 /* Market */,
+				68D2BB5B235075B100B2FC77 /* Main */,
+				68D2BB1C23506A4000B2FC77 /* Main.storyboard */,
+				68D2BB1F23506A4800B2FC77 /* Assets.xcassets */,
+				68D2BB2123506A4800B2FC77 /* LaunchScreen.storyboard */,
+				68D2BB2423506A4800B2FC77 /* Info.plist */,
+				68D2BB2523506A4800B2FC77 /* main.m */,
+			);
+			path = douban;
+			sourceTree = "<group>";
+		};
+		68D2BB2E23506A4800B2FC77 /* doubanTests */ = {
+			isa = PBXGroup;
+			children = (
+				68D2BB2F23506A4800B2FC77 /* doubanTests.m */,
+				68D2BB3123506A4800B2FC77 /* Info.plist */,
+			);
+			path = doubanTests;
+			sourceTree = "<group>";
+		};
+		68D2BB3923506A4800B2FC77 /* doubanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				68D2BB3A23506A4800B2FC77 /* doubanUITests.m */,
+				68D2BB3C23506A4800B2FC77 /* Info.plist */,
+			);
+			path = doubanUITests;
+			sourceTree = "<group>";
+		};
+		68D2BB48235073D500B2FC77 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				68D2BB612350760900B2FC77 /* Controller */,
+				68D2BB5F235075EF00B2FC77 /* Model */,
+				68D2BB60235075F700B2FC77 /* View */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		68D2BB4C2350743500B2FC77 /* BookAndAudioPage */ = {
+			isa = PBXGroup;
+			children = (
+				684EDDD223522B710050EFB7 /* search.png */,
+				684EDDD023522B630050EFB7 /* mail.png */,
+				684EDDCE2352294F0050EFB7 /* code.png */,
+				684EDDBF2351FFDC0050EFB7 /* Controller */,
+				684EDDBB2351FF900050EFB7 /* Model */,
+				684EDDC02351FFEF0050EFB7 /* View */,
+			);
+			path = BookAndAudioPage;
+			sourceTree = "<group>";
+		};
+		68D2BB532350751E00B2FC77 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				68D2BB542350754000B2FC77 /* DBGroupViewController.h */,
+				68D2BB552350754000B2FC77 /* DBGroupViewController.m */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		68D2BB572350755300B2FC77 /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				68D2BB58235075A300B2FC77 /* DBMarketViewController.h */,
+				68D2BB59235075A300B2FC77 /* DBMarketViewController.m */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
+		68D2BB5B235075B100B2FC77 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				68D2BB5C235075CE00B2FC77 /* DBMainViewController.h */,
+				68D2BB5D235075CE00B2FC77 /* DBMainViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		68D2BB5F235075EF00B2FC77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				68D2BB65235076B500B2FC77 /* DBHomePageModel.h */,
+				68D2BB66235076B500B2FC77 /* DBHomePageModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		68D2BB60235075F700B2FC77 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				68D2BB622350768300B2FC77 /* DBHomePageView.h */,
+				68D2BB632350768300B2FC77 /* DBHomePageView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		68D2BB612350760900B2FC77 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				68D2BB502350751900B2FC77 /* DBHomePageViewController.h */,
+				68D2BB512350751900B2FC77 /* DBHomePageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EBDF57634E779077A6FDC67B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B9A0675EC8F7126B4592BB1 /* Pods-douban.debug.xcconfig */,
+				729E5E826500B1CDC7BD8F9A /* Pods-douban.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68D2BB1223506A4000B2FC77 /* douban */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68D2BB3F23506A4800B2FC77 /* Build configuration list for PBXNativeTarget "douban" */;
+			buildPhases = (
+				F54939F3EB52DF813392D775 /* [CP] Check Pods Manifest.lock */,
+				68D2BB0F23506A4000B2FC77 /* Sources */,
+				68D2BB1023506A4000B2FC77 /* Frameworks */,
+				68D2BB1123506A4000B2FC77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = douban;
+			productName = douban;
+			productReference = 68D2BB1323506A4000B2FC77 /* douban.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68D2BB2A23506A4800B2FC77 /* doubanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68D2BB4223506A4800B2FC77 /* Build configuration list for PBXNativeTarget "doubanTests" */;
+			buildPhases = (
+				68D2BB2723506A4800B2FC77 /* Sources */,
+				68D2BB2823506A4800B2FC77 /* Frameworks */,
+				68D2BB2923506A4800B2FC77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68D2BB2D23506A4800B2FC77 /* PBXTargetDependency */,
+			);
+			name = doubanTests;
+			productName = doubanTests;
+			productReference = 68D2BB2B23506A4800B2FC77 /* doubanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		68D2BB3523506A4800B2FC77 /* doubanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68D2BB4523506A4800B2FC77 /* Build configuration list for PBXNativeTarget "doubanUITests" */;
+			buildPhases = (
+				68D2BB3223506A4800B2FC77 /* Sources */,
+				68D2BB3323506A4800B2FC77 /* Frameworks */,
+				68D2BB3423506A4800B2FC77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68D2BB3823506A4800B2FC77 /* PBXTargetDependency */,
+			);
+			name = doubanUITests;
+			productName = doubanUITests;
+			productReference = 68D2BB3623506A4800B2FC77 /* doubanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68D2BB0B23506A3F00B2FC77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "蒲悦蓉";
+				TargetAttributes = {
+					68D2BB1223506A4000B2FC77 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					68D2BB2A23506A4800B2FC77 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 68D2BB1223506A4000B2FC77;
+					};
+					68D2BB3523506A4800B2FC77 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 68D2BB1223506A4000B2FC77;
+					};
+				};
+			};
+			buildConfigurationList = 68D2BB0E23506A3F00B2FC77 /* Build configuration list for PBXProject "douban" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68D2BB0A23506A3F00B2FC77;
+			productRefGroup = 68D2BB1423506A4000B2FC77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68D2BB1223506A4000B2FC77 /* douban */,
+				68D2BB2A23506A4800B2FC77 /* doubanTests */,
+				68D2BB3523506A4800B2FC77 /* doubanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68D2BB1123506A4000B2FC77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				684EDDCA23520CD40050EFB7 /* shu.png in Resources */,
+				684EDDCC23520CD40050EFB7 /* market.png in Resources */,
+				684EDDCB23520CD40050EFB7 /* main.png in Resources */,
+				684EDDCF235229510050EFB7 /* code.png in Resources */,
+				684EDDCD23520CD40050EFB7 /* group.png in Resources */,
+				684EDDB92351FE8F0050EFB7 /* kai.png in Resources */,
+				684EDDD123522B640050EFB7 /* mail.png in Resources */,
+				684EDDD323522B710050EFB7 /* search.png in Resources */,
+				68D2BB2323506A4800B2FC77 /* LaunchScreen.storyboard in Resources */,
+				684EDDC5235208C80050EFB7 /* home.png in Resources */,
+				68D2BB2023506A4800B2FC77 /* Assets.xcassets in Resources */,
+				68D2BB1E23506A4000B2FC77 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D2BB2923506A4800B2FC77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D2BB3423506A4800B2FC77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F54939F3EB52DF813392D775 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-douban-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68D2BB0F23506A4000B2FC77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				684EDDBE2351FFC80050EFB7 /* DBBookAndAudioModel.m in Sources */,
+				68D2BB522350751900B2FC77 /* DBHomePageViewController.m in Sources */,
+				68D2BB1B23506A4000B2FC77 /* ViewController.m in Sources */,
+				68D2BB5A235075A300B2FC77 /* DBMarketViewController.m in Sources */,
+				68D2BB5E235075CE00B2FC77 /* DBMainViewController.m in Sources */,
+				68D2BB2623506A4800B2FC77 /* main.m in Sources */,
+				68D2BB642350768300B2FC77 /* DBHomePageView.m in Sources */,
+				68D2BB1823506A4000B2FC77 /* AppDelegate.m in Sources */,
+				684EDDC3235200110050EFB7 /* DBBookAndAudioView.m in Sources */,
+				68D2BB562350754000B2FC77 /* DBGroupViewController.m in Sources */,
+				68D2BB4F2350748C00B2FC77 /* DBBookAndAudioViewController.m in Sources */,
+				68D2BB67235076B500B2FC77 /* DBHomePageModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D2BB2723506A4800B2FC77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68D2BB3023506A4800B2FC77 /* doubanTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D2BB3223506A4800B2FC77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68D2BB3B23506A4800B2FC77 /* doubanUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68D2BB2D23506A4800B2FC77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68D2BB1223506A4000B2FC77 /* douban */;
+			targetProxy = 68D2BB2C23506A4800B2FC77 /* PBXContainerItemProxy */;
+		};
+		68D2BB3823506A4800B2FC77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68D2BB1223506A4000B2FC77 /* douban */;
+			targetProxy = 68D2BB3723506A4800B2FC77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68D2BB1C23506A4000B2FC77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68D2BB1D23506A4000B2FC77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		68D2BB2123506A4800B2FC77 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68D2BB2223506A4800B2FC77 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68D2BB3D23506A4800B2FC77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		68D2BB3E23506A4800B2FC77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68D2BB4023506A4800B2FC77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B9A0675EC8F7126B4592BB1 /* Pods-douban.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = douban/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = douban.douban;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68D2BB4123506A4800B2FC77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 729E5E826500B1CDC7BD8F9A /* Pods-douban.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = douban/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = douban.douban;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		68D2BB4323506A4800B2FC77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = doubanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = douban.doubanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/douban.app/douban";
+			};
+			name = Debug;
+		};
+		68D2BB4423506A4800B2FC77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = doubanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = douban.doubanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/douban.app/douban";
+			};
+			name = Release;
+		};
+		68D2BB4623506A4800B2FC77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = doubanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = douban.doubanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = douban;
+			};
+			name = Debug;
+		};
+		68D2BB4723506A4800B2FC77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = doubanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = douban.doubanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = douban;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68D2BB0E23506A3F00B2FC77 /* Build configuration list for PBXProject "douban" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D2BB3D23506A4800B2FC77 /* Debug */,
+				68D2BB3E23506A4800B2FC77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68D2BB3F23506A4800B2FC77 /* Build configuration list for PBXNativeTarget "douban" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D2BB4023506A4800B2FC77 /* Debug */,
+				68D2BB4123506A4800B2FC77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68D2BB4223506A4800B2FC77 /* Build configuration list for PBXNativeTarget "doubanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D2BB4323506A4800B2FC77 /* Debug */,
+				68D2BB4423506A4800B2FC77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68D2BB4523506A4800B2FC77 /* Build configuration list for PBXNativeTarget "doubanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D2BB4623506A4800B2FC77 /* Debug */,
+				68D2BB4723506A4800B2FC77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68D2BB0B23506A3F00B2FC77 /* Project object */;
+}
