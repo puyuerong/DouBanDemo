@@ -71,6 +71,11 @@
         [btn setTintColor:[UIColor blackColor]];
         btn.titleLabel.font = [UIFont systemFontOfSize:18];
         btn.titleLabel.textAlignment = NSTextAlignmentCenter;
+        if (i == 1) {
+            [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        } else {
+            [btn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        }
         int hight0 = 0.045 * hight;
         int width0;
         int off;
@@ -78,12 +83,12 @@
         if (i != 4) {
             width0 = 0.152 * width;
         } else {
-            width0 = 0.37 * width;
+            width0 = 0.32 * width;
         }
         if (i <= 4) {
-            off = (i - 1) * width0;
+            off = (i - 1) * width * 0.152;
         } else {
-            off = 0.7 * width + (i - 5) * width0;
+            off = 0.72 * width + (i - 5) * width * 0.152;
         }
         [btn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.width.equalTo(@(width0));
@@ -98,14 +103,15 @@
     [segmentController insertSegmentWithTitle:@"影院热映" atIndex:0 animated:nil];
     [segmentController insertSegmentWithTitle:@"即将上映" atIndex:1 animated:nil];
     segmentController.layer.borderWidth = 0.0;
-    
-    segmentController.tintColor = [UIColor blackColor];
-    segmentController.layer.borderColor = [UIColor whiteColor].CGColor;
-    segmentController.backgroundColor = [UIColor whiteColor];
+    segmentController.momentary = NO;
+    segmentController.selectedSegmentIndex = 0;
+    segmentController.tintColor = [UIColor clearColor];
+    segmentController.layer.borderColor = [UIColor clearColor].CGColor;
+//    segmentController.backgroundColor = [UIColor clearColor];
     [segmentController setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blackColor]}forState:UIControlStateNormal];
     [segmentController setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor grayColor]}forState:UIControlStateSelected];
 //    [segmentController setTitleTextAttributes:@{NSBackgroundColorAttributeName:[UIColor whiteColor]} forState:UIControlStateSelected];
-    UIFont *font = [UIFont boldSystemFontOfSize:20];   // 设置字体大小
+    UIFont *font = [UIFont boldSystemFontOfSize:23];   // 设置字体大小
     
     NSDictionary *attributes = [NSDictionary dictionaryWithObject:font
                                                            forKey:NSFontAttributeName];
