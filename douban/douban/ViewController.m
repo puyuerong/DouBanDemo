@@ -22,11 +22,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    UIImage *image = [UIImage imageNamed:@"kai"];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 375, 667)];
+    
+    UIImage *image = [UIImage imageNamed:@"roy3.JPG"];
     imageView.image = image;
     [self.view addSubview:imageView];
-    [self performSelector:@selector(Enter) withObject:self afterDelay:2];
+    [self performSelector:@selector(Enter) withObject:self afterDelay:1];
 }
 - (void)Enter {
     DBHomePageViewController *homePageVC = [[DBHomePageViewController alloc] init];

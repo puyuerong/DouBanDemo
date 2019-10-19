@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		684EDDB92351FE8F0050EFB7 /* kai.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDB32351FE8E0050EFB7 /* kai.png */; };
+		684C99902359A2FE0068456D /* DBNothingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684C998F2359A2FE0068456D /* DBNothingViewController.m */; };
+		684C99942359E23F0068456D /* DBDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684C99932359E23E0068456D /* DBDetailViewController.m */; };
+		684C99972359E26B0068456D /* DBDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 684C99962359E26B0068456D /* DBDetailView.m */; };
+		684C999A2359E31E0068456D /* DBListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 684C99992359E31E0068456D /* DBListTableViewCell.m */; };
 		684EDDBE2351FFC80050EFB7 /* DBBookAndAudioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 684EDDBD2351FFC80050EFB7 /* DBBookAndAudioModel.m */; };
 		684EDDC3235200110050EFB7 /* DBBookAndAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 684EDDC2235200110050EFB7 /* DBBookAndAudioView.m */; };
 		684EDDC5235208C80050EFB7 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDC4235208C70050EFB7 /* home.png */; };
@@ -18,6 +21,15 @@
 		684EDDCF235229510050EFB7 /* code.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDCE2352294F0050EFB7 /* code.png */; };
 		684EDDD123522B640050EFB7 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDD023522B630050EFB7 /* mail.png */; };
 		684EDDD323522B710050EFB7 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDD223522B710050EFB7 /* search.png */; };
+		68527D402352F81200077FB1 /* DBMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68527D3F2352F81200077FB1 /* DBMainTableViewCell.m */; };
+		686BD5DE235B6BA00005E36C /* halfStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 686BD5DB235B6B9C0005E36C /* halfStar.png */; };
+		686BD5DF235B6BA00005E36C /* allStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 686BD5DC235B6B9F0005E36C /* allStar.png */; };
+		686BD5E0235B6BA00005E36C /* emptyStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 686BD5DD235B6BA00005E36C /* emptyStar.png */; };
+		686FA50823588BC1009210FA /* 111.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 686FA50723588BC0009210FA /* 111.PNG */; };
+		686FA50A23588CD3009210FA /* kai.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 686FA50923588CD3009210FA /* kai.jpeg */; };
+		686FA50C23588DB9009210FA /* roy3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 686FA50B23588DB9009210FA /* roy3.JPG */; };
+		686FA50F23588EB6009210FA /* DBListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 686FA50E23588EB6009210FA /* DBListViewController.m */; };
+		686FA51223588EFB009210FA /* DBListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 686FA51123588EFB009210FA /* DBListView.m */; };
 		68D2BB1823506A4000B2FC77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB1723506A4000B2FC77 /* AppDelegate.m */; };
 		68D2BB1B23506A4000B2FC77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB1A23506A4000B2FC77 /* ViewController.m */; };
 		68D2BB1E23506A4000B2FC77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D2BB1C23506A4000B2FC77 /* Main.storyboard */; };
@@ -56,7 +68,14 @@
 /* Begin PBXFileReference section */
 		1B9A0675EC8F7126B4592BB1 /* Pods-douban.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douban.debug.xcconfig"; path = "Target Support Files/Pods-douban/Pods-douban.debug.xcconfig"; sourceTree = "<group>"; };
 		3C6BF43981E988DAB9A17DBF /* libPods-douban.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-douban.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		684EDDB32351FE8E0050EFB7 /* kai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kai.png; sourceTree = "<group>"; };
+		684C998E2359A2FE0068456D /* DBNothingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBNothingViewController.h; sourceTree = "<group>"; };
+		684C998F2359A2FE0068456D /* DBNothingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBNothingViewController.m; sourceTree = "<group>"; };
+		684C99922359E23E0068456D /* DBDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDetailViewController.h; sourceTree = "<group>"; };
+		684C99932359E23E0068456D /* DBDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDetailViewController.m; sourceTree = "<group>"; };
+		684C99952359E26B0068456D /* DBDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDetailView.h; sourceTree = "<group>"; };
+		684C99962359E26B0068456D /* DBDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDetailView.m; sourceTree = "<group>"; };
+		684C99982359E31E0068456D /* DBListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBListTableViewCell.h; sourceTree = "<group>"; };
+		684C99992359E31E0068456D /* DBListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBListTableViewCell.m; sourceTree = "<group>"; };
 		684EDDBC2351FFC80050EFB7 /* DBBookAndAudioModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBBookAndAudioModel.h; sourceTree = "<group>"; };
 		684EDDBD2351FFC80050EFB7 /* DBBookAndAudioModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBBookAndAudioModel.m; sourceTree = "<group>"; };
 		684EDDC1235200110050EFB7 /* DBBookAndAudioView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBBookAndAudioView.h; sourceTree = "<group>"; };
@@ -69,6 +88,18 @@
 		684EDDCE2352294F0050EFB7 /* code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code.png; sourceTree = "<group>"; };
 		684EDDD023522B630050EFB7 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
 		684EDDD223522B710050EFB7 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		68527D3E2352F81200077FB1 /* DBMainTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBMainTableViewCell.h; sourceTree = "<group>"; };
+		68527D3F2352F81200077FB1 /* DBMainTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBMainTableViewCell.m; sourceTree = "<group>"; };
+		686BD5DB235B6B9C0005E36C /* halfStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = halfStar.png; sourceTree = "<group>"; };
+		686BD5DC235B6B9F0005E36C /* allStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = allStar.png; sourceTree = "<group>"; };
+		686BD5DD235B6BA00005E36C /* emptyStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emptyStar.png; sourceTree = "<group>"; };
+		686FA50723588BC0009210FA /* 111.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 111.PNG; sourceTree = "<group>"; };
+		686FA50923588CD3009210FA /* kai.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kai.jpeg; sourceTree = "<group>"; };
+		686FA50B23588DB9009210FA /* roy3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roy3.JPG; sourceTree = "<group>"; };
+		686FA50D23588EB6009210FA /* DBListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DBListViewController.h; path = ../View/DBListViewController.h; sourceTree = "<group>"; };
+		686FA50E23588EB6009210FA /* DBListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DBListViewController.m; path = ../View/DBListViewController.m; sourceTree = "<group>"; };
+		686FA51023588EFB009210FA /* DBListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBListView.h; sourceTree = "<group>"; };
+		686FA51123588EFB009210FA /* DBListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBListView.m; sourceTree = "<group>"; };
 		68D2BB1323506A4000B2FC77 /* douban.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = douban.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D2BB1623506A4000B2FC77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		68D2BB1723506A4000B2FC77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -136,15 +167,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		684C99912359DC5D0068456D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		684EDDBA2351FE9A0050EFB7 /* 图 */ = {
 			isa = PBXGroup;
 			children = (
+				686BD5DC235B6B9F0005E36C /* allStar.png */,
+				686BD5DD235B6BA00005E36C /* emptyStar.png */,
+				686BD5DB235B6B9C0005E36C /* halfStar.png */,
 				684EDDC4235208C70050EFB7 /* home.png */,
-				684EDDB32351FE8E0050EFB7 /* kai.png */,
 				684EDDC923520CD40050EFB7 /* group.png */,
+				686FA50923588CD3009210FA /* kai.jpeg */,
+				686FA50B23588DB9009210FA /* roy3.JPG */,
 				684EDDC723520CD40050EFB7 /* main.png */,
 				684EDDC823520CD40050EFB7 /* market.png */,
 				684EDDC623520CD30050EFB7 /* shu.png */,
+				686FA50723588BC0009210FA /* 111.PNG */,
 			);
 			path = "图";
 			sourceTree = "<group>";
@@ -163,6 +206,10 @@
 			children = (
 				68D2BB4D2350748C00B2FC77 /* DBBookAndAudioViewController.h */,
 				68D2BB4E2350748C00B2FC77 /* DBBookAndAudioViewController.m */,
+				686FA50D23588EB6009210FA /* DBListViewController.h */,
+				686FA50E23588EB6009210FA /* DBListViewController.m */,
+				684C99922359E23E0068456D /* DBDetailViewController.h */,
+				684C99932359E23E0068456D /* DBDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -172,6 +219,14 @@
 			children = (
 				684EDDC1235200110050EFB7 /* DBBookAndAudioView.h */,
 				684EDDC2235200110050EFB7 /* DBBookAndAudioView.m */,
+				686FA51023588EFB009210FA /* DBListView.h */,
+				686FA51123588EFB009210FA /* DBListView.m */,
+				684C99952359E26B0068456D /* DBDetailView.h */,
+				684C99962359E26B0068456D /* DBDetailView.m */,
+				68527D3E2352F81200077FB1 /* DBMainTableViewCell.h */,
+				68527D3F2352F81200077FB1 /* DBMainTableViewCell.m */,
+				684C99982359E31E0068456D /* DBListTableViewCell.h */,
+				684C99992359E31E0068456D /* DBListTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -206,6 +261,8 @@
 				68D2BB1723506A4000B2FC77 /* AppDelegate.m */,
 				68D2BB1923506A4000B2FC77 /* ViewController.h */,
 				68D2BB1A23506A4000B2FC77 /* ViewController.m */,
+				684C998E2359A2FE0068456D /* DBNothingViewController.h */,
+				684C998F2359A2FE0068456D /* DBNothingViewController.m */,
 				68D2BB48235073D500B2FC77 /* HomePage */,
 				68D2BB4C2350743500B2FC77 /* BookAndAudioPage */,
 				68D2BB532350751E00B2FC77 /* Group */,
@@ -252,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				684EDDD223522B710050EFB7 /* search.png */,
+				684C99912359DC5D0068456D /* New Group */,
 				684EDDD023522B630050EFB7 /* mail.png */,
 				684EDDCE2352294F0050EFB7 /* code.png */,
 				684EDDBF2351FFDC0050EFB7 /* Controller */,
@@ -429,16 +487,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				684EDDCA23520CD40050EFB7 /* shu.png in Resources */,
+				686BD5DF235B6BA00005E36C /* allStar.png in Resources */,
 				684EDDCC23520CD40050EFB7 /* market.png in Resources */,
 				684EDDCB23520CD40050EFB7 /* main.png in Resources */,
+				686FA50A23588CD3009210FA /* kai.jpeg in Resources */,
+				686BD5E0235B6BA00005E36C /* emptyStar.png in Resources */,
 				684EDDCF235229510050EFB7 /* code.png in Resources */,
+				686FA50823588BC1009210FA /* 111.PNG in Resources */,
+				686BD5DE235B6BA00005E36C /* halfStar.png in Resources */,
 				684EDDCD23520CD40050EFB7 /* group.png in Resources */,
-				684EDDB92351FE8F0050EFB7 /* kai.png in Resources */,
 				684EDDD123522B640050EFB7 /* mail.png in Resources */,
 				684EDDD323522B710050EFB7 /* search.png in Resources */,
 				68D2BB2323506A4800B2FC77 /* LaunchScreen.storyboard in Resources */,
 				684EDDC5235208C80050EFB7 /* home.png in Resources */,
 				68D2BB2023506A4800B2FC77 /* Assets.xcassets in Resources */,
+				686FA50C23588DB9009210FA /* roy3.JPG in Resources */,
 				68D2BB1E23506A4000B2FC77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +552,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				684C99942359E23F0068456D /* DBDetailViewController.m in Sources */,
+				684C99902359A2FE0068456D /* DBNothingViewController.m in Sources */,
+				684C999A2359E31E0068456D /* DBListTableViewCell.m in Sources */,
 				684EDDBE2351FFC80050EFB7 /* DBBookAndAudioModel.m in Sources */,
 				68D2BB522350751900B2FC77 /* DBHomePageViewController.m in Sources */,
 				68D2BB1B23506A4000B2FC77 /* ViewController.m in Sources */,
@@ -496,10 +562,14 @@
 				68D2BB5E235075CE00B2FC77 /* DBMainViewController.m in Sources */,
 				68D2BB2623506A4800B2FC77 /* main.m in Sources */,
 				68D2BB642350768300B2FC77 /* DBHomePageView.m in Sources */,
+				684C99972359E26B0068456D /* DBDetailView.m in Sources */,
+				686FA51223588EFB009210FA /* DBListView.m in Sources */,
 				68D2BB1823506A4000B2FC77 /* AppDelegate.m in Sources */,
 				684EDDC3235200110050EFB7 /* DBBookAndAudioView.m in Sources */,
 				68D2BB562350754000B2FC77 /* DBGroupViewController.m in Sources */,
 				68D2BB4F2350748C00B2FC77 /* DBBookAndAudioViewController.m in Sources */,
+				68527D402352F81200077FB1 /* DBMainTableViewCell.m in Sources */,
+				686FA50F23588EB6009210FA /* DBListViewController.m in Sources */,
 				68D2BB67235076B500B2FC77 /* DBHomePageModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

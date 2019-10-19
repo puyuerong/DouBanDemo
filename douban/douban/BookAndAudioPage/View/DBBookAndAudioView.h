@@ -7,11 +7,27 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "DBMainTableViewCell.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DBBookAndAudioView : UIView
+@protocol DBBookAndAudioDelegate <NSObject>
 
+- (void)ClickButton:(UIButton*)btn;
+- (void)ClickTableViewButton:(UIButton*)btn;
+
+@end
+
+@interface DBBookAndAudioView : UIView
+<UITableViewDelegate, UITableViewDataSource, MainTableViewCellDelegate>
+@property UITextField *searchTextField;
+@property UIImageView *codeImaegView;
+@property UIImageView *mailImageView;
+@property UISegmentedControl *segmentController;
+@property UIImageView *searchImageView;
+@property NSMutableArray *btnArray;
+@property UIButton *allButton;
+@property UITableView *movieTableView;
+@property id<DBBookAndAudioDelegate>delegate;
 @end
 
 NS_ASSUME_NONNULL_END

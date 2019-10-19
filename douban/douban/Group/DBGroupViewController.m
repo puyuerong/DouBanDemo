@@ -17,6 +17,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+    UIProgressView *progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(50, 200, 275, 20)];
+    [self.view addSubview:progressView];
+    progressView.backgroundColor = [UIColor grayColor];
+//    progressView.progressViewStyle = UIProgressViewStyleBar;
+    progressView.progressViewStyle = UIProgressViewStyleDefault;
+    progressView.progressTintColor = [UIColor orangeColor];
+    progressView.progress = 0.8;
+    [UIView animateWithDuration:5 animations:^{
+        [progressView setProgress:0.8 animated:YES];
+    } completion:^(BOOL finished){
+        }];
 }
 
 /*

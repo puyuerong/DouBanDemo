@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "DBBookAndAudioView.h"
+#import "DBMainTableViewCell.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DBBookAndAudioViewController : UIViewController
-
+<DBBookAndAudioDelegate>
 @end
 
 NS_ASSUME_NONNULL_END
