@@ -12,7 +12,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DBBookAndAudioViewController : UIViewController
-<DBBookAndAudioDelegate>
+<DBBookAndAudioDelegate, UITableViewDelegate, UITableViewDataSource>
+@property NSMutableArray *titleArray;
+@property NSMutableArray *gradeArray;
 @end
 
 NS_ASSUME_NONNULL_END

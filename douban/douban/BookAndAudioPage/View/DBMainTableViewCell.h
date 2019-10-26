@@ -26,6 +26,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property UILabel *gradeLabel1;
 @property UILabel *gradeLabel2;
 @property UILabel *gradeLabel3;
+@property UIImageView *starImageView1;
+@property UIImageView *starImageView2;
+@property UIImageView *starImageView3;
 @property id<MainTableViewCellDelegate>delegate;
 @end
 

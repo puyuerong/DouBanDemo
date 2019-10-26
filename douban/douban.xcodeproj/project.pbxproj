@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6820E8B52361CC1500AD412B /* DBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6820E8B42361CC1500AD412B /* DBModel.m */; };
+		6820E8B82361D74B00AD412B /* DBManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6820E8B72361D74B00AD412B /* DBManger.m */; };
 		684C99902359A2FE0068456D /* DBNothingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684C998F2359A2FE0068456D /* DBNothingViewController.m */; };
 		684C99942359E23F0068456D /* DBDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684C99932359E23E0068456D /* DBDetailViewController.m */; };
 		684C99972359E26B0068456D /* DBDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 684C99962359E26B0068456D /* DBDetailView.m */; };
@@ -68,6 +70,10 @@
 /* Begin PBXFileReference section */
 		1B9A0675EC8F7126B4592BB1 /* Pods-douban.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douban.debug.xcconfig"; path = "Target Support Files/Pods-douban/Pods-douban.debug.xcconfig"; sourceTree = "<group>"; };
 		3C6BF43981E988DAB9A17DBF /* libPods-douban.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-douban.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6820E8B32361CC1400AD412B /* DBModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBModel.h; sourceTree = "<group>"; };
+		6820E8B42361CC1500AD412B /* DBModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBModel.m; sourceTree = "<group>"; };
+		6820E8B62361D74B00AD412B /* DBManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBManger.h; sourceTree = "<group>"; };
+		6820E8B72361D74B00AD412B /* DBManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBManger.m; sourceTree = "<group>"; };
 		684C998E2359A2FE0068456D /* DBNothingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBNothingViewController.h; sourceTree = "<group>"; };
 		684C998F2359A2FE0068456D /* DBNothingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBNothingViewController.m; sourceTree = "<group>"; };
 		684C99922359E23E0068456D /* DBDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDetailViewController.h; sourceTree = "<group>"; };
@@ -170,6 +176,9 @@
 		684C99912359DC5D0068456D /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				684EDDCE2352294F0050EFB7 /* code.png */,
+				684EDDD223522B710050EFB7 /* search.png */,
+				684EDDD023522B630050EFB7 /* mail.png */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -197,6 +206,8 @@
 			children = (
 				684EDDBC2351FFC80050EFB7 /* DBBookAndAudioModel.h */,
 				684EDDBD2351FFC80050EFB7 /* DBBookAndAudioModel.m */,
+				6820E8B32361CC1400AD412B /* DBModel.h */,
+				6820E8B42361CC1500AD412B /* DBModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -210,6 +221,8 @@
 				686FA50E23588EB6009210FA /* DBListViewController.m */,
 				684C99922359E23E0068456D /* DBDetailViewController.h */,
 				684C99932359E23E0068456D /* DBDetailViewController.m */,
+				6820E8B62361D74B00AD412B /* DBManger.h */,
+				6820E8B72361D74B00AD412B /* DBManger.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -308,10 +321,7 @@
 		68D2BB4C2350743500B2FC77 /* BookAndAudioPage */ = {
 			isa = PBXGroup;
 			children = (
-				684EDDD223522B710050EFB7 /* search.png */,
 				684C99912359DC5D0068456D /* New Group */,
-				684EDDD023522B630050EFB7 /* mail.png */,
-				684EDDCE2352294F0050EFB7 /* code.png */,
 				684EDDBF2351FFDC0050EFB7 /* Controller */,
 				684EDDBB2351FF900050EFB7 /* Model */,
 				684EDDC02351FFEF0050EFB7 /* View */,
@@ -556,6 +566,7 @@
 				684C99902359A2FE0068456D /* DBNothingViewController.m in Sources */,
 				684C999A2359E31E0068456D /* DBListTableViewCell.m in Sources */,
 				684EDDBE2351FFC80050EFB7 /* DBBookAndAudioModel.m in Sources */,
+				6820E8B82361D74B00AD412B /* DBManger.m in Sources */,
 				68D2BB522350751900B2FC77 /* DBHomePageViewController.m in Sources */,
 				68D2BB1B23506A4000B2FC77 /* ViewController.m in Sources */,
 				68D2BB5A235075A300B2FC77 /* DBMarketViewController.m in Sources */,
@@ -563,6 +574,7 @@
 				68D2BB2623506A4800B2FC77 /* main.m in Sources */,
 				68D2BB642350768300B2FC77 /* DBHomePageView.m in Sources */,
 				684C99972359E26B0068456D /* DBDetailView.m in Sources */,
+				6820E8B52361CC1500AD412B /* DBModel.m in Sources */,
 				686FA51223588EFB009210FA /* DBListView.m in Sources */,
 				68D2BB1823506A4000B2FC77 /* AppDelegate.m in Sources */,
 				684EDDC3235200110050EFB7 /* DBBookAndAudioView.m in Sources */,

@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface DBBookAndAudioView : UIView
-<UITableViewDelegate, UITableViewDataSource, MainTableViewCellDelegate>
+<MainTableViewCellDelegate>
 @property UITextField *searchTextField;
 @property UIImageView *codeImaegView;
 @property UIImageView *mailImageView;

@@ -24,8 +24,10 @@
     int hight = [UIScreen mainScreen].bounds.size.height;
     int statusHight = [[UIApplication sharedApplication] statusBarFrame].size.height;
     int h = self.navigationController.navigationBar.frame.size.height;
+    int width = [UIScreen mainScreen].bounds.size.width;
+    [self.view addSubview:detailView];
     [detailView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.equalTo(self);
+        make.width.equalTo(@(width));
         make.height.equalTo(@(hight - statusHight - h));
     }];
     

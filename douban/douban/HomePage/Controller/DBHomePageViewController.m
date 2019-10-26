@@ -20,26 +20,10 @@
     self.view.backgroundColor = [UIColor whiteColor];
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(50, 200, 275, 50)];
     [self.view addSubview:imageView];
-    int grade;
-    grade = 10;
-    for (int i = 0; i <= 4; i++) {
-        UIImageView *starImageView = [[UIImageView alloc] initWithFrame:CGRectMake(i * 60, 0, 50, 50)];
-        [imageView addSubview:starImageView];
-        if (grade - 2 < 0) {
-            if (grade - 2 == -2) {
-                starImageView.image = [UIImage imageNamed:@"emptyStar"];
-            } else {
-                starImageView.image = [UIImage imageNamed:@"halfStar"];
-                grade = 0;
-            }
-        } else {
-            starImageView.image = [UIImage imageNamed:@"allStar"];
-            grade = grade - 2;
-        }
-    }
+    NSString *grade0 = @"8.5";
+    
         
 }
-
 /*
 #pragma mark - Navigation
 

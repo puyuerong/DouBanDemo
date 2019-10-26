@@ -18,12 +18,14 @@
     self.detailLabel = [[UILabel alloc] init];
     self.buyButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     self.numberLabel = [[UILabel alloc] init];
+    self.starImageView = [[UIImageView alloc] init];
     [self.contentView addSubview:self.movieImageView];
     [self.contentView addSubview:self.nameLabel];
     [self.contentView addSubview:self.gradeLabel];
     [self.contentView addSubview:self.detailLabel];
     [self.contentView addSubview:self.buyButton];
     [self.contentView addSubview:self.numberLabel];
+    [self.contentView addSubview:self.starImageView];
     return self;
 }
 - (void)layoutSubviews {
@@ -44,7 +46,7 @@
 
     width0 = width * 0.48;
     hight0 = hight * 0.03;
-    left = 0.027 * width;
+    left = 0.024 * width;
     [_nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.movieImageView.mas_right).offset(top);
         make.top.equalTo(self.movieImageView.mas_top);
@@ -55,7 +57,7 @@
     _nameLabel.textColor = [UIColor blackColor];
 
     hight0 = 0.015 * hight;
-    left = 0.213 * width;
+    left = 0.216 * width;
     [_gradeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.movieImageView.mas_right).offset(left);
         make.top.equalTo(self.nameLabel.mas_bottom).offset(hight0);
@@ -65,6 +67,17 @@
     _gradeLabel.textColor = [UIColor grayColor];
     _gradeLabel.font = [UIFont systemFontOfSize:15];
 
+    /*72 9-81*/
+    width0 = 0.192 * width;
+    [_starImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.nameLabel.mas_left);
+        make.width.equalTo(@(width0));
+        make.height.equalTo(self.gradeLabel.mas_height);
+        make.top.equalTo(self.gradeLabel.mas_top);
+    }];
+    
+    
+    
     width0 = 0.426 * width;
     hight0 = 0.09 *hight;
     top = 0.015 * hight;
@@ -104,6 +117,8 @@
     _numberLabel.textColor = [UIColor grayColor];
     _numberLabel.font = [UIFont systemFontOfSize:8];
 }
+
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code

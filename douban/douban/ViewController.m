@@ -12,6 +12,7 @@
 #import "DBGroupViewController.h"
 #import "DBMarketViewController.h"
 #import "DBMainViewController.h"
+#define DBApi "github.com/zce/douban-api-docs"
 
 @interface ViewController ()
 
@@ -21,7 +22,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading /the view.
+    NSString *str = [NSString stringWithFormat:@"github.com%s/zce/douban-api-docs", DBApi];
+    NSLog(@"%@", str);
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 375, 667)];
     
     UIImage *image = [UIImage imageNamed:@"roy3.JPG"];

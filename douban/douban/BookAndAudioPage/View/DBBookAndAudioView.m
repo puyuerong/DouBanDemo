@@ -48,8 +48,8 @@
     _movieTableView = [[UITableView alloc] init];
     [_movieTableView registerClass:[DBMainTableViewCell class] forCellReuseIdentifier:@"mainCell"];
     [self addSubview:_movieTableView];
-    _movieTableView.delegate = self;
-    _movieTableView.dataSource = self;
+//    _movieTableView.delegate = self;
+//    _movieTableView.dataSource = self;
     
     return self;
 }
@@ -107,11 +107,11 @@
     _segmentController.tintColor = [UIColor clearColor];
     _segmentController.layer.borderColor = [UIColor clearColor].CGColor;
 
-    [_segmentController setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor grayColor], NSFontAttributeName:[UIFont systemFontOfSize:23] }forState:UIControlStateNormal];
-    [_segmentController setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blackColor], NSFontAttributeName:[UIFont systemFontOfSize:23]}forState:UIControlStateSelected];
+    [_segmentController setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor grayColor], NSFontAttributeName:[UIFont systemFontOfSize:20] }forState:UIControlStateNormal];
+    [_segmentController setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blackColor], NSFontAttributeName:[UIFont systemFontOfSize:20]}forState:UIControlStateSelected];
     
     [_segmentController mas_makeConstraints:^(MASConstraintMaker *make) {
-        int hight0 = 0.15 * hight;
+        int hight0 = 0.08 * hight; /*0.15*/
         int top = 0.165 * hight;
         make.width.equalTo(self).multipliedBy(0.587);
         make.height.equalTo(@(hight0));
@@ -163,6 +163,7 @@
     }];
     [_allButton addTarget:self action:@selector(PressClickButton:) forControlEvents:UIControlEventTouchUpInside];
     
+ 
     [_movieTableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(self);
         make.height.equalTo(self).multipliedBy(0.54);
@@ -171,27 +172,115 @@
     }];
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
-}
-- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    DBMainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"mainCell" forIndexPath:indexPath];
-    [cell.btn1 setImage:[UIImage imageNamed:@"roy3.JPG"] forState:UIControlStateNormal];
-    cell.nameLabel1.text = @"双子杀手";
-    cell.nameLabel2.text = @"沉睡魔咒";
-    cell.nameLabel3.text = @"你好霸王龙";
-    cell.gradeLabel1.text = @"7.1";
-    cell.gradeLabel2.text = @"6.2";
-    cell.gradeLabel3.text = @"8.2";
-    cell.delegate = self;
-    return cell;
-}
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 220;
-}
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+//    return 1;
+//}
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//    return 2;
+//}
+//- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    DBMainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"mainCell" forIndexPath:indexPath];
+//    [cell.btn1 setImage:[UIImage imageNamed:@"roy3.JPG"] forState:UIControlStateNormal];
+//    cell.nameLabel1.text = @"双子杀手";
+//    cell.nameLabel2.text = @"沉睡魔咒";
+//    cell.nameLabel3.text = @"你好霸王龙";
+//    cell.gradeLabel1.text = @"7.1";
+//    float grade = [self Transform:cell.gradeLabel1.text];
+//    int width = [UIScreen mainScreen].bounds.size.width;
+//    int width0 = 0.028 * width;
+//    for (int i = 0; i <= 4; i++) {
+//        UIImageView *imageView0 = [[UIImageView alloc] init];
+//        [cell.starImageView1 addSubview:imageView0];
+//        [imageView0 mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.width.equalTo(@(width0));
+//            make.height.equalTo(cell.starImageView1.mas_height);
+//            make.left.equalTo(cell.starImageView1.mas_left).offset(width0 * i);
+//            make.top.equalTo(cell.starImageView1.mas_top);
+//        }];
+//        if (grade - 2 < 0) {
+//            if (grade - 2 == -2) {
+//                imageView0.image = [UIImage imageNamed:@"emptyStar"];
+//            } else {
+//                imageView0.image = [UIImage imageNamed:@"halfStar"];
+//                grade = 0;
+//            }
+//        } else {
+//            imageView0.image = [UIImage imageNamed:@"allStar"];
+//            grade = grade - 2;
+//        }
+//    }
+//    cell.gradeLabel2.text = @"6.2";
+//    grade = [self Transform:cell.gradeLabel2.text];
+//    for (int i = 0; i <= 4; i++) {
+//        UIImageView *imageView0 = [[UIImageView alloc] init];
+//        [cell.starImageView2 addSubview:imageView0];
+//        [imageView0 mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.width.equalTo(@(width0));
+//            make.height.equalTo(cell.starImageView2.mas_height);
+//            make.left.equalTo(cell.starImageView2.mas_left).offset(width0 * i);
+//            make.top.equalTo(cell.starImageView2.mas_top);
+//        }];
+//        if (grade - 2 < 0) {
+//            if (grade - 2 == -2) {
+//                imageView0.image = [UIImage imageNamed:@"emptyStar"];
+//            } else {
+//                imageView0.image = [UIImage imageNamed:@"halfStar"];
+//                grade = 0;
+//            }
+//        } else {
+//            imageView0.image = [UIImage imageNamed:@"allStar"];
+//            grade = grade - 2;
+//        }
+//    }
+//    cell.gradeLabel3.text = @"8.2";
+//    grade = [self Transform:cell.gradeLabel3.text];
+//    for (int i = 0; i <= 4; i++) {
+//        UIImageView *imageView0 = [[UIImageView alloc] init];
+//        [cell.starImageView1 addSubview:imageView0];
+//        [imageView0 mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.width.equalTo(@(width0));
+//            make.height.equalTo(cell.starImageView3.mas_height);
+//            make.left.equalTo(cell.starImageView3.mas_left).offset(width0 * i);
+//            make.top.equalTo(cell.starImageView3.mas_top);
+//        }];
+//        if (grade - 2 < 0) {
+//            if (grade - 2 == -2) {
+//                imageView0.image = [UIImage imageNamed:@"emptyStar"];
+//            } else {
+//                imageView0.image = [UIImage imageNamed:@"halfStar"];
+//                grade = 0;
+//            }
+//        } else {
+//            imageView0.image = [UIImage imageNamed:@"allStar"];
+//            grade = grade - 2;
+//        }
+//    }
+//    cell.delegate = self;
+//    return cell;
+//}
+//- (float)Transform:(NSString*)str {
+//    float k = 10, sum = 0, t = 1;
+//    for (int i = 0; i < [str length]; i++) {
+//        if ([str characterAtIndex:i] == '.') {
+//            k = 0.1;
+//            t = 0.1;
+//            continue;
+//        }
+//        if (k == 10) {
+//            sum = sum * t + (int)[str characterAtIndex:i] - 48;
+//            t = t * k;
+//        } else {
+//            sum = sum + t * ((float)[str characterAtIndex:i] - 48);
+//            t = t * k;
+//        }
+//    }
+//    NSLog(@"end = %f", sum);
+//    return sum;
+//}
+//
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    return 220;
+//}
 - (void)PressClickButton:(UIButton*)btn {
     [_delegate ClickButton:btn];
 }

@@ -39,13 +39,14 @@
     int hight = [UIScreen mainScreen].bounds.size.height;
     int nHight = self.navigationController.navigationBar.frame.size.height;
     int statusHight = [[UIApplication sharedApplication] statusBarFrame].size.height;
-    
+    hight = hight - nHight - statusHight;
     _listView = [[DBListView alloc] init];
     [self.view addSubview:_listView];
     [_listView mas_makeConstraints:^(MASConstraintMaker *make) {
+        NSLog(@"%d", hight);
         make.width.equalTo(@(width));
-        make.height.equalTo(self.view).offset(hight - nHight - statusHight);
-        make.left.equalTo(self.view);
+        make.height.equalTo(@(hight));
+        make.left.equalTo(self.view).offset(0);
         make.top.equalTo(self.view).offset(nHight + statusHight);
     }];
     _listView.delegate = self;

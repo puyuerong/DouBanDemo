@@ -21,6 +21,9 @@
     self.gradeLabel1 = [[UILabel alloc] init];
     self.gradeLabel2 = [[UILabel alloc] init];
     self.gradeLabel3 = [[UILabel alloc] init];
+    self.starImageView1 = [[UIImageView alloc] init];
+    self.starImageView2 = [[UIImageView alloc] init];
+    self.starImageView3 = [[UIImageView alloc] init];
     [self.contentView addSubview:self.btn1];
     [self.contentView addSubview:self.btn2];
     [self.contentView addSubview:self.btn3];
@@ -30,6 +33,9 @@
     [self.contentView addSubview:self.gradeLabel1];
     [self.contentView addSubview:self.gradeLabel2];
     [self.contentView addSubview:self.gradeLabel3];
+    [self.contentView addSubview:self.starImageView1];
+    [self.contentView addSubview:self.starImageView2];
+    [self.contentView addSubview:self.starImageView3];
     return self;
 }
 
@@ -122,6 +128,26 @@
     _gradeLabel3.font = [UIFont systemFontOfSize:15];
     _gradeLabel3.textColor = [UIColor grayColor];
 
+    /*15-60 = 45*/
+    width0 = 0.16 * width;
+    [_starImageView1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.gradeLabel1.mas_top);
+        make.left.equalTo(self.nameLabel1.mas_left);
+        make.height.equalTo(self.gradeLabel1.mas_height);
+        make.width.equalTo(@(width0));
+    }];
+    [_starImageView2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.gradeLabel2.mas_top);
+        make.left.equalTo(self.nameLabel2.mas_left);
+        make.height.equalTo(self.gradeLabel2.mas_height);
+        make.width.equalTo(@(width0));
+    }];
+    [_starImageView3 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.gradeLabel3.mas_top);
+        make.left.equalTo(self.nameLabel3.mas_left);
+        make.height.equalTo(self.gradeLabel3.mas_height);
+        make.width.equalTo(@(width0));
+    }];
 }
 - (void)ClickPressEnterDetail:(UIButton*)btn {
     [self.delegate ClickPressEnterDetail:btn];
