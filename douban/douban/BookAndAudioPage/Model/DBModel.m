@@ -16,20 +16,20 @@
 
 @implementation DBNowModel
 
-//- (instancetype)initWithJson:(NSDictionary *)json {
-//    self = [DBNowModel new];
-//    if (self) {
-//        self.title = json[@"title"];
-////        self.average = json[@"average"];
-////        self.year = json[@"year"];
-////        self.pubdates = json[@"pubdates"];
-////        self.genres = json[@"genres"];
-////        self.casts = json[@"casts"];
-////        self.directors = json[@"directors"];
-////        self.collect_count = json[@"collect_count"];
-//    }
-//    return self;
-//}
+- (instancetype)initWithJson:(NSDictionary *)json {
+    self = [DBNowModel new];
+    if (self) {
+        self.title = json[@"title"];
+//        self.average = json[@"average"];
+//        self.year = json[@"year"];
+//        self.pubdates = json[@"pubdates"];
+//        self.genres = json[@"genres"];
+//        self.casts = json[@"casts"];
+//        self.directors = json[@"directors"];
+//        self.collect_count = json[@"collect_count"];
+    }
+    return self;
+}
 +(BOOL)propertyIsOptional:(NSString *)propertyName{
     return  YES;
 }
