@@ -11,11 +11,11 @@
  https://douban-api.now.sh
  https://douban-api.zce.now.sh
  https://douban-api-git-master.zce.now.sh*/
+
 #import "DBManger.h"
-#import "DBModel.h"
 static DBManger *manger;
 
-#define nowHttp "https://douban-api.uieee.com"
+#define nowHttp "https://douban.uieee.com"
 @implementation DBManger
 
 

@@ -15,11 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 @interface DBListView : UIView
-<UITableViewDelegate, UITableViewDataSource>
 @property UISegmentedControl *segmentControl;
 @property UITableView *listTableView;
 @property id<DBListViewDelegate>delegate;
-- (float)Transform:(NSString*)str;
 @end
 
 NS_ASSUME_NONNULL_END

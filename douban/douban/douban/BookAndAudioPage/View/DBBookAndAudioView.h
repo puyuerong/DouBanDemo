@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "DBMainTableViewCell.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol DBBookAndAudioDelegate <NSObject>
@@ -19,7 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface DBBookAndAudioView : UIView
-<MainTableViewCellDelegate>
 @property UIScrollView *scrollView;
 @property UITextField *searchTextField;
 @property UIImageView *codeImaegView;

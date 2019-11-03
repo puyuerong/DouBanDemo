@@ -18,6 +18,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    NSString *str1 = @"1998-";
+    NSString *str = @"11-15";
+    NSLog(@"%ld, %ld", [str1 length], [str length]);
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(50, 200, 275, 50)];
     [self.view addSubview:imageView];
     NSString *grade0 = @"8.5";

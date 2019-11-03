@@ -9,6 +9,7 @@
 #import "DBDetailViewController.h"
 #import "DBDetailView.h"
 #import "Masonry.h"
+
 @interface DBDetailViewController ()
 
 @end
@@ -17,9 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    self.title = @"电影";
-    self.navigationController.navigationBar.topItem.title = @"";         //设置返回按钮只保留箭头
+       //设置返回按钮只保留箭头
     DBDetailView *detailView = [[DBDetailView alloc] init];
     int hight = [UIScreen mainScreen].bounds.size.height;
     int statusHight = [[UIApplication sharedApplication] statusBarFrame].size.height;
@@ -31,11 +30,25 @@
         make.height.equalTo(@(hight - statusHight - h));
     }];
     
-    self.navigationController.navigationBar.tintColor = [UIColor blackColor]; //设置颜色
-    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
-    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60) forBarMetrics:UIBarMetricsDefault];
+    
     // Do any additional setup after loading the view.
 }
+- (void)viewDidAppear:(BOOL)animated {
+    self.view.backgroundColor = [UIColor colorWithRed:0.13f green:0.36f blue:0.49f alpha:1.00f];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    self.navigationController.navigationBar.topItem.title = @"";
+
+    self.title = @"电影";
+    
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor]; //设置颜色
+//    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+//    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60) forBarMetrics:UIBarMetricsDefault];
+}
+
+
+
+
 
 /*
 #pragma mark - Navigation

@@ -7,31 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6820E8B52361CC1500AD412B /* DBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6820E8B42361CC1500AD412B /* DBModel.m */; };
-		6820E8B82361D74B00AD412B /* DBManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6820E8B72361D74B00AD412B /* DBManger.m */; };
 		684C99902359A2FE0068456D /* DBNothingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684C998F2359A2FE0068456D /* DBNothingViewController.m */; };
-		684C99942359E23F0068456D /* DBDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684C99932359E23E0068456D /* DBDetailViewController.m */; };
-		684C99972359E26B0068456D /* DBDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 684C99962359E26B0068456D /* DBDetailView.m */; };
-		684C999A2359E31E0068456D /* DBListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 684C99992359E31E0068456D /* DBListTableViewCell.m */; };
-		684EDDBE2351FFC80050EFB7 /* DBBookAndAudioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 684EDDBD2351FFC80050EFB7 /* DBBookAndAudioModel.m */; };
-		684EDDC3235200110050EFB7 /* DBBookAndAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 684EDDC2235200110050EFB7 /* DBBookAndAudioView.m */; };
 		684EDDC5235208C80050EFB7 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDC4235208C70050EFB7 /* home.png */; };
 		684EDDCA23520CD40050EFB7 /* shu.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDC623520CD30050EFB7 /* shu.png */; };
 		684EDDCB23520CD40050EFB7 /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDC723520CD40050EFB7 /* main.png */; };
 		684EDDCC23520CD40050EFB7 /* market.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDC823520CD40050EFB7 /* market.png */; };
 		684EDDCD23520CD40050EFB7 /* group.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDC923520CD40050EFB7 /* group.png */; };
-		684EDDCF235229510050EFB7 /* code.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDCE2352294F0050EFB7 /* code.png */; };
-		684EDDD123522B640050EFB7 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDD023522B630050EFB7 /* mail.png */; };
-		684EDDD323522B710050EFB7 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDD223522B710050EFB7 /* search.png */; };
-		68527D402352F81200077FB1 /* DBMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68527D3F2352F81200077FB1 /* DBMainTableViewCell.m */; };
+		685FD750236D78E500B19059 /* NULL.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 685FD74F236D78E500B19059 /* NULL.jpg */; };
+		685FD77E236DF10000B19059 /* DBBookAndAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 685FD75D236DF0FF00B19059 /* DBBookAndAudioViewController.m */; };
+		685FD77F236DF10000B19059 /* DBDetailManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 685FD75F236DF0FF00B19059 /* DBDetailManger.m */; };
+		685FD780236DF10000B19059 /* DBDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 685FD761236DF0FF00B19059 /* DBDetailViewController.m */; };
+		685FD781236DF10000B19059 /* DBManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 685FD763236DF0FF00B19059 /* DBManger.m */; };
+		685FD782236DF10000B19059 /* DBBookAndAudioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 685FD766236DF0FF00B19059 /* DBBookAndAudioModel.m */; };
+		685FD784236DF10000B19059 /* DBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 685FD76A236DF10000B19059 /* DBModel.m */; };
+		685FD785236DF10000B19059 /* code.png in Resources */ = {isa = PBXBuildFile; fileRef = 685FD76C236DF10000B19059 /* code.png */; };
+		685FD786236DF10000B19059 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 685FD76D236DF10000B19059 /* mail.png */; };
+		685FD787236DF10000B19059 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 685FD76E236DF10000B19059 /* search.png */; };
+		685FD788236DF10000B19059 /* DBBookAndAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 685FD771236DF10000B19059 /* DBBookAndAudioView.m */; };
+		685FD789236DF10000B19059 /* DBDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 685FD773236DF10000B19059 /* DBDetailView.m */; };
+		685FD78A236DF10000B19059 /* DBListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 685FD775236DF10000B19059 /* DBListTableViewCell.m */; };
+		685FD78B236DF10000B19059 /* DBListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 685FD777236DF10000B19059 /* DBListView.m */; };
+		685FD78C236DF10000B19059 /* DBListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 685FD779236DF10000B19059 /* DBListViewController.m */; };
+		685FD78D236DF10000B19059 /* DBMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 685FD77B236DF10000B19059 /* DBMainTableViewCell.m */; };
+		685FD78E236DF10000B19059 /* WillTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 685FD77D236DF10000B19059 /* WillTableViewCell.m */; };
 		686BD5DE235B6BA00005E36C /* halfStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 686BD5DB235B6B9C0005E36C /* halfStar.png */; };
 		686BD5DF235B6BA00005E36C /* allStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 686BD5DC235B6B9F0005E36C /* allStar.png */; };
 		686BD5E0235B6BA00005E36C /* emptyStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 686BD5DD235B6BA00005E36C /* emptyStar.png */; };
 		686FA50823588BC1009210FA /* 111.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 686FA50723588BC0009210FA /* 111.PNG */; };
 		686FA50A23588CD3009210FA /* kai.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 686FA50923588CD3009210FA /* kai.jpeg */; };
 		686FA50C23588DB9009210FA /* roy3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 686FA50B23588DB9009210FA /* roy3.JPG */; };
-		686FA50F23588EB6009210FA /* DBListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 686FA50E23588EB6009210FA /* DBListViewController.m */; };
-		686FA51223588EFB009210FA /* DBListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 686FA51123588EFB009210FA /* DBListView.m */; };
 		68D2BB1823506A4000B2FC77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB1723506A4000B2FC77 /* AppDelegate.m */; };
 		68D2BB1B23506A4000B2FC77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB1A23506A4000B2FC77 /* ViewController.m */; };
 		68D2BB1E23506A4000B2FC77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D2BB1C23506A4000B2FC77 /* Main.storyboard */; };
@@ -40,7 +44,6 @@
 		68D2BB2623506A4800B2FC77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB2523506A4800B2FC77 /* main.m */; };
 		68D2BB3023506A4800B2FC77 /* doubanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB2F23506A4800B2FC77 /* doubanTests.m */; };
 		68D2BB3B23506A4800B2FC77 /* doubanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB3A23506A4800B2FC77 /* doubanUITests.m */; };
-		68D2BB4F2350748C00B2FC77 /* DBBookAndAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB4E2350748C00B2FC77 /* DBBookAndAudioViewController.m */; };
 		68D2BB522350751900B2FC77 /* DBHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB512350751900B2FC77 /* DBHomePageViewController.m */; };
 		68D2BB562350754000B2FC77 /* DBGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB552350754000B2FC77 /* DBGroupViewController.m */; };
 		68D2BB5A235075A300B2FC77 /* DBMarketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB59235075A300B2FC77 /* DBMarketViewController.m */; };
@@ -70,42 +73,49 @@
 /* Begin PBXFileReference section */
 		1B9A0675EC8F7126B4592BB1 /* Pods-douban.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douban.debug.xcconfig"; path = "Target Support Files/Pods-douban/Pods-douban.debug.xcconfig"; sourceTree = "<group>"; };
 		3C6BF43981E988DAB9A17DBF /* libPods-douban.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-douban.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6820E8B32361CC1400AD412B /* DBModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBModel.h; sourceTree = "<group>"; };
-		6820E8B42361CC1500AD412B /* DBModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBModel.m; sourceTree = "<group>"; };
-		6820E8B62361D74B00AD412B /* DBManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBManger.h; sourceTree = "<group>"; };
-		6820E8B72361D74B00AD412B /* DBManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBManger.m; sourceTree = "<group>"; };
 		684C998E2359A2FE0068456D /* DBNothingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBNothingViewController.h; sourceTree = "<group>"; };
 		684C998F2359A2FE0068456D /* DBNothingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBNothingViewController.m; sourceTree = "<group>"; };
-		684C99922359E23E0068456D /* DBDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDetailViewController.h; sourceTree = "<group>"; };
-		684C99932359E23E0068456D /* DBDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDetailViewController.m; sourceTree = "<group>"; };
-		684C99952359E26B0068456D /* DBDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDetailView.h; sourceTree = "<group>"; };
-		684C99962359E26B0068456D /* DBDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDetailView.m; sourceTree = "<group>"; };
-		684C99982359E31E0068456D /* DBListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBListTableViewCell.h; sourceTree = "<group>"; };
-		684C99992359E31E0068456D /* DBListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBListTableViewCell.m; sourceTree = "<group>"; };
-		684EDDBC2351FFC80050EFB7 /* DBBookAndAudioModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBBookAndAudioModel.h; sourceTree = "<group>"; };
-		684EDDBD2351FFC80050EFB7 /* DBBookAndAudioModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBBookAndAudioModel.m; sourceTree = "<group>"; };
-		684EDDC1235200110050EFB7 /* DBBookAndAudioView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBBookAndAudioView.h; sourceTree = "<group>"; };
-		684EDDC2235200110050EFB7 /* DBBookAndAudioView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBBookAndAudioView.m; sourceTree = "<group>"; };
 		684EDDC4235208C70050EFB7 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		684EDDC623520CD30050EFB7 /* shu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shu.png; sourceTree = "<group>"; };
 		684EDDC723520CD40050EFB7 /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
 		684EDDC823520CD40050EFB7 /* market.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = market.png; sourceTree = "<group>"; };
 		684EDDC923520CD40050EFB7 /* group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group.png; sourceTree = "<group>"; };
-		684EDDCE2352294F0050EFB7 /* code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code.png; sourceTree = "<group>"; };
-		684EDDD023522B630050EFB7 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
-		684EDDD223522B710050EFB7 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
-		68527D3E2352F81200077FB1 /* DBMainTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBMainTableViewCell.h; sourceTree = "<group>"; };
-		68527D3F2352F81200077FB1 /* DBMainTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBMainTableViewCell.m; sourceTree = "<group>"; };
+		685FD74F236D78E500B19059 /* NULL.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NULL.jpg; sourceTree = "<group>"; };
+		685FD75C236DF0FF00B19059 /* DBBookAndAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBBookAndAudioViewController.h; sourceTree = "<group>"; };
+		685FD75D236DF0FF00B19059 /* DBBookAndAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBBookAndAudioViewController.m; sourceTree = "<group>"; };
+		685FD75E236DF0FF00B19059 /* DBDetailManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBDetailManger.h; sourceTree = "<group>"; };
+		685FD75F236DF0FF00B19059 /* DBDetailManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBDetailManger.m; sourceTree = "<group>"; };
+		685FD760236DF0FF00B19059 /* DBDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBDetailViewController.h; sourceTree = "<group>"; };
+		685FD761236DF0FF00B19059 /* DBDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBDetailViewController.m; sourceTree = "<group>"; };
+		685FD762236DF0FF00B19059 /* DBManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManger.h; sourceTree = "<group>"; };
+		685FD763236DF0FF00B19059 /* DBManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManger.m; sourceTree = "<group>"; };
+		685FD765236DF0FF00B19059 /* DBBookAndAudioModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBBookAndAudioModel.h; sourceTree = "<group>"; };
+		685FD766236DF0FF00B19059 /* DBBookAndAudioModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBBookAndAudioModel.m; sourceTree = "<group>"; };
+		685FD769236DF10000B19059 /* DBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBModel.h; sourceTree = "<group>"; };
+		685FD76A236DF10000B19059 /* DBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBModel.m; sourceTree = "<group>"; };
+		685FD76C236DF10000B19059 /* code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code.png; sourceTree = "<group>"; };
+		685FD76D236DF10000B19059 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
+		685FD76E236DF10000B19059 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		685FD770236DF10000B19059 /* DBBookAndAudioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBBookAndAudioView.h; sourceTree = "<group>"; };
+		685FD771236DF10000B19059 /* DBBookAndAudioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBBookAndAudioView.m; sourceTree = "<group>"; };
+		685FD772236DF10000B19059 /* DBDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBDetailView.h; sourceTree = "<group>"; };
+		685FD773236DF10000B19059 /* DBDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBDetailView.m; sourceTree = "<group>"; };
+		685FD774236DF10000B19059 /* DBListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBListTableViewCell.h; sourceTree = "<group>"; };
+		685FD775236DF10000B19059 /* DBListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBListTableViewCell.m; sourceTree = "<group>"; };
+		685FD776236DF10000B19059 /* DBListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBListView.h; sourceTree = "<group>"; };
+		685FD777236DF10000B19059 /* DBListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBListView.m; sourceTree = "<group>"; };
+		685FD778236DF10000B19059 /* DBListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBListViewController.h; path = ../View/DBListViewController.h; sourceTree = "<group>"; };
+		685FD779236DF10000B19059 /* DBListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBListViewController.m; path = ../View/DBListViewController.m; sourceTree = "<group>"; };
+		685FD77A236DF10000B19059 /* DBMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBMainTableViewCell.h; sourceTree = "<group>"; };
+		685FD77B236DF10000B19059 /* DBMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBMainTableViewCell.m; sourceTree = "<group>"; };
+		685FD77C236DF10000B19059 /* WillTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WillTableViewCell.h; sourceTree = "<group>"; };
+		685FD77D236DF10000B19059 /* WillTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WillTableViewCell.m; sourceTree = "<group>"; };
 		686BD5DB235B6B9C0005E36C /* halfStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = halfStar.png; sourceTree = "<group>"; };
 		686BD5DC235B6B9F0005E36C /* allStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = allStar.png; sourceTree = "<group>"; };
 		686BD5DD235B6BA00005E36C /* emptyStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emptyStar.png; sourceTree = "<group>"; };
 		686FA50723588BC0009210FA /* 111.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 111.PNG; sourceTree = "<group>"; };
 		686FA50923588CD3009210FA /* kai.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kai.jpeg; sourceTree = "<group>"; };
 		686FA50B23588DB9009210FA /* roy3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roy3.JPG; sourceTree = "<group>"; };
-		686FA50D23588EB6009210FA /* DBListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DBListViewController.h; path = ../View/DBListViewController.h; sourceTree = "<group>"; };
-		686FA50E23588EB6009210FA /* DBListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DBListViewController.m; path = ../View/DBListViewController.m; sourceTree = "<group>"; };
-		686FA51023588EFB009210FA /* DBListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBListView.h; sourceTree = "<group>"; };
-		686FA51123588EFB009210FA /* DBListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBListView.m; sourceTree = "<group>"; };
 		68D2BB1323506A4000B2FC77 /* douban.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = douban.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D2BB1623506A4000B2FC77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		68D2BB1723506A4000B2FC77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -122,8 +132,6 @@
 		68D2BB3623506A4800B2FC77 /* doubanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = doubanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D2BB3A23506A4800B2FC77 /* doubanUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = doubanUITests.m; sourceTree = "<group>"; };
 		68D2BB3C23506A4800B2FC77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68D2BB4D2350748C00B2FC77 /* DBBookAndAudioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBBookAndAudioViewController.h; sourceTree = "<group>"; };
-		68D2BB4E2350748C00B2FC77 /* DBBookAndAudioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBBookAndAudioViewController.m; sourceTree = "<group>"; };
 		68D2BB502350751900B2FC77 /* DBHomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBHomePageViewController.h; sourceTree = "<group>"; };
 		68D2BB512350751900B2FC77 /* DBHomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBHomePageViewController.m; sourceTree = "<group>"; };
 		68D2BB542350754000B2FC77 /* DBGroupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBGroupViewController.h; sourceTree = "<group>"; };
@@ -173,16 +181,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		684C99912359DC5D0068456D /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				684EDDCE2352294F0050EFB7 /* code.png */,
-				684EDDD223522B710050EFB7 /* search.png */,
-				684EDDD023522B630050EFB7 /* mail.png */,
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		684EDDBA2351FE9A0050EFB7 /* 图 */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,49 +195,75 @@
 				684EDDC823520CD40050EFB7 /* market.png */,
 				684EDDC623520CD30050EFB7 /* shu.png */,
 				686FA50723588BC0009210FA /* 111.PNG */,
+				685FD74F236D78E500B19059 /* NULL.jpg */,
 			);
 			path = "图";
 			sourceTree = "<group>";
 		};
-		684EDDBB2351FF900050EFB7 /* Model */ = {
+		685FD75A236DF0FF00B19059 /* BookAndAudioPage */ = {
 			isa = PBXGroup;
 			children = (
-				684EDDBC2351FFC80050EFB7 /* DBBookAndAudioModel.h */,
-				684EDDBD2351FFC80050EFB7 /* DBBookAndAudioModel.m */,
-				6820E8B32361CC1400AD412B /* DBModel.h */,
-				6820E8B42361CC1500AD412B /* DBModel.m */,
+				685FD75B236DF0FF00B19059 /* Controller */,
+				685FD764236DF0FF00B19059 /* Model */,
+				685FD76B236DF10000B19059 /* New Group */,
+				685FD76F236DF10000B19059 /* View */,
 			);
-			path = Model;
+			path = BookAndAudioPage;
 			sourceTree = "<group>";
 		};
-		684EDDBF2351FFDC0050EFB7 /* Controller */ = {
+		685FD75B236DF0FF00B19059 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				68D2BB4D2350748C00B2FC77 /* DBBookAndAudioViewController.h */,
-				68D2BB4E2350748C00B2FC77 /* DBBookAndAudioViewController.m */,
-				686FA50D23588EB6009210FA /* DBListViewController.h */,
-				686FA50E23588EB6009210FA /* DBListViewController.m */,
-				684C99922359E23E0068456D /* DBDetailViewController.h */,
-				684C99932359E23E0068456D /* DBDetailViewController.m */,
-				6820E8B62361D74B00AD412B /* DBManger.h */,
-				6820E8B72361D74B00AD412B /* DBManger.m */,
+				685FD75C236DF0FF00B19059 /* DBBookAndAudioViewController.h */,
+				685FD75D236DF0FF00B19059 /* DBBookAndAudioViewController.m */,
+				685FD778236DF10000B19059 /* DBListViewController.h */,
+				685FD779236DF10000B19059 /* DBListViewController.m */,
+				685FD760236DF0FF00B19059 /* DBDetailViewController.h */,
+				685FD761236DF0FF00B19059 /* DBDetailViewController.m */,
+				685FD75E236DF0FF00B19059 /* DBDetailManger.h */,
+				685FD75F236DF0FF00B19059 /* DBDetailManger.m */,
+				685FD762236DF0FF00B19059 /* DBManger.h */,
+				685FD763236DF0FF00B19059 /* DBManger.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		684EDDC02351FFEF0050EFB7 /* View */ = {
+		685FD764236DF0FF00B19059 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				684EDDC1235200110050EFB7 /* DBBookAndAudioView.h */,
-				684EDDC2235200110050EFB7 /* DBBookAndAudioView.m */,
-				686FA51023588EFB009210FA /* DBListView.h */,
-				686FA51123588EFB009210FA /* DBListView.m */,
-				684C99952359E26B0068456D /* DBDetailView.h */,
-				684C99962359E26B0068456D /* DBDetailView.m */,
-				68527D3E2352F81200077FB1 /* DBMainTableViewCell.h */,
-				68527D3F2352F81200077FB1 /* DBMainTableViewCell.m */,
-				684C99982359E31E0068456D /* DBListTableViewCell.h */,
-				684C99992359E31E0068456D /* DBListTableViewCell.m */,
+				685FD765236DF0FF00B19059 /* DBBookAndAudioModel.h */,
+				685FD766236DF0FF00B19059 /* DBBookAndAudioModel.m */,
+				685FD769236DF10000B19059 /* DBModel.h */,
+				685FD76A236DF10000B19059 /* DBModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		685FD76B236DF10000B19059 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				685FD76C236DF10000B19059 /* code.png */,
+				685FD76D236DF10000B19059 /* mail.png */,
+				685FD76E236DF10000B19059 /* search.png */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		685FD76F236DF10000B19059 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				685FD770236DF10000B19059 /* DBBookAndAudioView.h */,
+				685FD771236DF10000B19059 /* DBBookAndAudioView.m */,
+				685FD772236DF10000B19059 /* DBDetailView.h */,
+				685FD773236DF10000B19059 /* DBDetailView.m */,
+				685FD774236DF10000B19059 /* DBListTableViewCell.h */,
+				685FD775236DF10000B19059 /* DBListTableViewCell.m */,
+				685FD776236DF10000B19059 /* DBListView.h */,
+				685FD777236DF10000B19059 /* DBListView.m */,
+				685FD77A236DF10000B19059 /* DBMainTableViewCell.h */,
+				685FD77B236DF10000B19059 /* DBMainTableViewCell.m */,
+				685FD77C236DF10000B19059 /* WillTableViewCell.h */,
+				685FD77D236DF10000B19059 /* WillTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -277,7 +301,7 @@
 				684C998E2359A2FE0068456D /* DBNothingViewController.h */,
 				684C998F2359A2FE0068456D /* DBNothingViewController.m */,
 				68D2BB48235073D500B2FC77 /* HomePage */,
-				68D2BB4C2350743500B2FC77 /* BookAndAudioPage */,
+				685FD75A236DF0FF00B19059 /* BookAndAudioPage */,
 				68D2BB532350751E00B2FC77 /* Group */,
 				68D2BB572350755300B2FC77 /* Market */,
 				68D2BB5B235075B100B2FC77 /* Main */,
@@ -316,17 +340,6 @@
 				68D2BB60235075F700B2FC77 /* View */,
 			);
 			path = HomePage;
-			sourceTree = "<group>";
-		};
-		68D2BB4C2350743500B2FC77 /* BookAndAudioPage */ = {
-			isa = PBXGroup;
-			children = (
-				684C99912359DC5D0068456D /* New Group */,
-				684EDDBF2351FFDC0050EFB7 /* Controller */,
-				684EDDBB2351FF900050EFB7 /* Model */,
-				684EDDC02351FFEF0050EFB7 /* View */,
-			);
-			path = BookAndAudioPage;
 			sourceTree = "<group>";
 		};
 		68D2BB532350751E00B2FC77 /* Group */ = {
@@ -497,17 +510,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				684EDDCA23520CD40050EFB7 /* shu.png in Resources */,
+				685FD787236DF10000B19059 /* search.png in Resources */,
 				686BD5DF235B6BA00005E36C /* allStar.png in Resources */,
 				684EDDCC23520CD40050EFB7 /* market.png in Resources */,
 				684EDDCB23520CD40050EFB7 /* main.png in Resources */,
+				685FD750236D78E500B19059 /* NULL.jpg in Resources */,
 				686FA50A23588CD3009210FA /* kai.jpeg in Resources */,
+				685FD786236DF10000B19059 /* mail.png in Resources */,
+				685FD785236DF10000B19059 /* code.png in Resources */,
 				686BD5E0235B6BA00005E36C /* emptyStar.png in Resources */,
-				684EDDCF235229510050EFB7 /* code.png in Resources */,
 				686FA50823588BC1009210FA /* 111.PNG in Resources */,
 				686BD5DE235B6BA00005E36C /* halfStar.png in Resources */,
 				684EDDCD23520CD40050EFB7 /* group.png in Resources */,
-				684EDDD123522B640050EFB7 /* mail.png in Resources */,
-				684EDDD323522B710050EFB7 /* search.png in Resources */,
 				68D2BB2323506A4800B2FC77 /* LaunchScreen.storyboard in Resources */,
 				684EDDC5235208C80050EFB7 /* home.png in Resources */,
 				68D2BB2023506A4800B2FC77 /* Assets.xcassets in Resources */,
@@ -562,26 +576,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				684C99942359E23F0068456D /* DBDetailViewController.m in Sources */,
 				684C99902359A2FE0068456D /* DBNothingViewController.m in Sources */,
-				684C999A2359E31E0068456D /* DBListTableViewCell.m in Sources */,
-				684EDDBE2351FFC80050EFB7 /* DBBookAndAudioModel.m in Sources */,
-				6820E8B82361D74B00AD412B /* DBManger.m in Sources */,
+				685FD78A236DF10000B19059 /* DBListTableViewCell.m in Sources */,
+				685FD780236DF10000B19059 /* DBDetailViewController.m in Sources */,
 				68D2BB522350751900B2FC77 /* DBHomePageViewController.m in Sources */,
 				68D2BB1B23506A4000B2FC77 /* ViewController.m in Sources */,
+				685FD78D236DF10000B19059 /* DBMainTableViewCell.m in Sources */,
+				685FD78C236DF10000B19059 /* DBListViewController.m in Sources */,
+				685FD782236DF10000B19059 /* DBBookAndAudioModel.m in Sources */,
+				685FD78E236DF10000B19059 /* WillTableViewCell.m in Sources */,
 				68D2BB5A235075A300B2FC77 /* DBMarketViewController.m in Sources */,
 				68D2BB5E235075CE00B2FC77 /* DBMainViewController.m in Sources */,
+				685FD788236DF10000B19059 /* DBBookAndAudioView.m in Sources */,
+				685FD78B236DF10000B19059 /* DBListView.m in Sources */,
+				685FD77E236DF10000B19059 /* DBBookAndAudioViewController.m in Sources */,
+				685FD77F236DF10000B19059 /* DBDetailManger.m in Sources */,
 				68D2BB2623506A4800B2FC77 /* main.m in Sources */,
 				68D2BB642350768300B2FC77 /* DBHomePageView.m in Sources */,
-				684C99972359E26B0068456D /* DBDetailView.m in Sources */,
-				6820E8B52361CC1500AD412B /* DBModel.m in Sources */,
-				686FA51223588EFB009210FA /* DBListView.m in Sources */,
 				68D2BB1823506A4000B2FC77 /* AppDelegate.m in Sources */,
-				684EDDC3235200110050EFB7 /* DBBookAndAudioView.m in Sources */,
+				685FD789236DF10000B19059 /* DBDetailView.m in Sources */,
+				685FD781236DF10000B19059 /* DBManger.m in Sources */,
+				685FD784236DF10000B19059 /* DBModel.m in Sources */,
 				68D2BB562350754000B2FC77 /* DBGroupViewController.m in Sources */,
-				68D2BB4F2350748C00B2FC77 /* DBBookAndAudioViewController.m in Sources */,
-				68527D402352F81200077FB1 /* DBMainTableViewCell.m in Sources */,
-				686FA50F23588EB6009210FA /* DBListViewController.m in Sources */,
 				68D2BB67235076B500B2FC77 /* DBHomePageModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

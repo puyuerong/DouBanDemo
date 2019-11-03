@@ -19,7 +19,6 @@
     
     _scrollView.pagingEnabled = YES;
     _scrollView.scrollEnabled = YES;
-    _scrollView.contentSize = CGSizeMake(375*2, 500);
     
     _searchTextField = [[UITextField alloc] init];
     [self addSubview:_searchTextField];
@@ -54,14 +53,12 @@
     [self addSubview:_allButton];
     
     _movieTableView = [[UITableView alloc] init];
-    [_movieTableView registerClass:[DBMainTableViewCell class] forCellReuseIdentifier:@"mainCell"];
+//    [_movieTableView registerClass:[DBMainTableViewCell class] forCellReuseIdentifier:@"mainCell"];
     [_scrollView addSubview:_movieTableView];
-//    _movieTableView.delegate = self;
-//    _movieTableView.dataSource = self;
-    
+
     _movieTableView2 = [[UITableView alloc] init];
     _movieTableView2.backgroundColor = [UIColor redColor];
-    [_movieTableView2 registerClass:[DBMainTableViewCell class] forCellReuseIdentifier:@"mainCell2"];
+//    [_movieTableView2 registerClass:[DBMainTableViewCell class] forCellReuseIdentifier:@"mainCell2"];
     [_scrollView addSubview:_movieTableView2];
     
     return self;
@@ -177,31 +174,33 @@
     }];
     [_allButton addTarget:self action:@selector(PressClickButton:) forControlEvents:UIControlEventTouchUpInside];
     
- 
-    [_movieTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [_scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(self);
-        make.height.equalTo(self).multipliedBy(0.65);
+        make.height.equalTo(self).multipliedBy(0.66);
         make.top.equalTo(self.segmentController.mas_bottom);
         make.left.equalTo(self);
+    }];
+    _scrollView.contentSize = CGSizeMake(width * 2, 0.66 * hight);
+    
+    [_movieTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.equalTo(@(width));
+        make.height.equalTo(self).multipliedBy(0.65);
+        make.top.equalTo(self.scrollView.mas_top).offset(0);
+        make.left.equalTo(self.scrollView.mas_left).offset(0);
     }];
     _movieTableView.tag = 1;
     
     [_movieTableView2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.equalTo(self);
+        make.width.equalTo(@(width));
         make.height.equalTo(self).multipliedBy(0.65);
-        make.top.equalTo(self.segmentController.mas_bottom);
-        make.left.equalTo(self).offset(width);
+        make.top.equalTo(self.movieTableView.mas_top).offset(0);
+        make.left.equalTo(self.movieTableView.mas_right).offset(0);
     }];
     _movieTableView2.tag = 2;
     
-    _scrollView.contentSize = CGSizeMake(width * 2, 0.65 * hight);
+//    _scrollView.contentSize = CGSizeMake(width * 2, 0.65 * hight);
     NSLog(@"%d", width);
-    [_scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.equalTo(self);
-        make.height.equalTo(self).multipliedBy(0.65);
-        make.top.equalTo(self.segmentController.mas_bottom);
-        make.left.equalTo(self);
-    }];
+    
     
 }
 

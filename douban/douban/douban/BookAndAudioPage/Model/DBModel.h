@@ -13,11 +13,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol DBNowModel
 @end
-@protocol DBSubjectModel
-@end
 @protocol RatingModel
 @end
 @protocol ImageModel
+@end
+@protocol CastsModel
+@end
+@protocol DirectorsModel
+@end
+
+@interface DirectorsModel : JSONModel
+@property NSString *name;
+@end
+
+@interface CastsModel : JSONModel
+@property NSString *name;
 @end
 
 @interface ImageModel : JSONModel
@@ -32,6 +42,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSString* title;
 @property RatingModel* rating;
 @property ImageModel* images;
+@property NSMutableArray *pubdates;
+@property NSString *year;
+@property NSMutableArray *countries;
+@property NSMutableArray *genres;
+@property NSMutableArray <DirectorsModel>*directors;
+@property NSMutableArray <CastsModel> *casts;
+@property NSString *original_title;
+@property NSString *collect_count;
 
 @end
 

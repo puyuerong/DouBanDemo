@@ -26,6 +26,19 @@
 }
 @end
 
+@implementation CastsModel
++(BOOL)propertyIsOptional:(NSString *)propertyName{
+    return  YES;
+}
+@end
+
+@implementation DirectorsModel
++(BOOL)propertyIsOptional:(NSString *)propertyName{
+    return  YES;
+}
+@end
+
+
 @implementation DBNowModel
 
 //- (instancetype)initWithJson:(NSDictionary *)json {

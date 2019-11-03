@@ -71,7 +71,7 @@
         make.top.equalTo(self).offset(top);
         make.left.equalTo(self.btn2.mas_right).offset(left);
     }];
-    [self.btn1 addTarget:self action:@selector(ClickPressEnterDetail:) forControlEvents:UIControlEventTouchUpInside];
+    [self.btn3 addTarget:self action:@selector(ClickPressEnterDetail:) forControlEvents:UIControlEventTouchUpInside];
     
     hight0 = 0.045 * hight;
     [self.nameLabel1 mas_makeConstraints:^(MASConstraintMaker *make) {
