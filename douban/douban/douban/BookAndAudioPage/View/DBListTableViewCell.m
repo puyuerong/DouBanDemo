@@ -8,6 +8,7 @@
 
 #import "DBListTableViewCell.h"
 #import "Masonry.h"
+
 @implementation DBListTableViewCell
 /*140*/
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
@@ -103,7 +104,9 @@
     }];
     _buyButton.titleLabel.textAlignment = NSTextAlignmentCenter;
     _buyButton.layer.masksToBounds = YES;
-    _buyButton.layer.cornerRadius = 2;
+    _buyButton.layer.cornerRadius = 5;
+    _buyButton.layer.borderWidth = 1.0;
+    _buyButton.layer.borderColor = [UIColor colorWithRed:0.94f green:0.39f blue:0.46f alpha:1.00f].CGColor;
     _buyButton.tintColor = [UIColor colorWithRed:0.94f green:0.39f blue:0.46f alpha:1.00f];
 
     hight0 = 0.007 * hight;
@@ -115,7 +118,8 @@
         make.left.equalTo(self.buyButton);
     }];
     _numberLabel.textColor = [UIColor grayColor];
-    _numberLabel.font = [UIFont systemFontOfSize:8];
+    _numberLabel.font = [UIFont systemFontOfSize:15];
+    _numberLabel.textAlignment = NSTextAlignmentCenter;
 }
 
 

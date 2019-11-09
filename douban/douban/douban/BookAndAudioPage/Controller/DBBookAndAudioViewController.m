@@ -11,6 +11,8 @@
 @interface DBBookAndAudioViewController ()
 @property DBNowModel *dataModel;
 @property DBModel *allModel;
+@property DBModel *nowModel;
+@property DBModel *willModel;
 @property DBBookAndAudioView *bookAndAudioView;
 @property NSInteger width;
 @property NSInteger hight;
@@ -95,6 +97,11 @@
                 NSLog(@"%@", str);
                 [self.dataArray2 addObject:str];
             }
+        }
+        if ([select isEqualToString:@"will"]) {
+            self.willModel = resuleModel;
+        } else {
+            self.nowModel = resuleModel;
         }
 //        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
 //            if ([select isEqualToString:@"now"]) {
@@ -323,8 +330,14 @@
 }
 - (void)ClickButton:(UIButton *)btn {
     DBListViewController *listViewContoller = [[DBListViewController alloc] init];
-    listViewContoller.dataModel = _allModel;
+    listViewContoller.dataModel = _nowModel;
+    listViewContoller.data2Model = _willModel;
     listViewContoller.num = _number;
+    if (_bookAndAudioView.scrollView.contentOffset.x >= _width) {
+        listViewContoller.select = 2;
+    } else {
+        listViewContoller.select = 1;
+    }
     self.tabBarController.tabBar.hidden = YES;
     [self.navigationController pushViewController:listViewContoller animated:YES];
 }

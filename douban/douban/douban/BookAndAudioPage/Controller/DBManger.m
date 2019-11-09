@@ -2,7 +2,7 @@
 //  DBManger.m
 //  douban
 //
-//  Created by 蒲悦蓉 on 2019/10/24.
+//  Creat3ed by 蒲悦蓉 on 2019/10/24.
 //  Copyright © 2019 蒲悦蓉. All rights reserved.
 //
 /*https://douban-api.uieee.com

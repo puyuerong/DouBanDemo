@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property UIButton *buyButton;
 @property UILabel *numberLabel;
 @property UIImageView *starImageView;
+
 @end
 
 NS_ASSUME_NONNULL_END

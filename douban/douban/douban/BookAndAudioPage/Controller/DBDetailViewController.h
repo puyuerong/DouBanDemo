@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "DBModel.h"
+#import "DetailModel.h"
+#import "DBDetailManger.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DBDetailViewController : UIViewController
-
+@property DBNowModel *nowModel;
+@property DetailModel *detailModel;
 @end
 
 NS_ASSUME_NONNULL_END

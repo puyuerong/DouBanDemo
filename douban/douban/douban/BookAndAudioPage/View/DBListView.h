@@ -17,7 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DBListView : UIView
 @property UISegmentedControl *segmentControl;
 @property UITableView *listTableView;
+//@property UITableView *listTableView2;
 @property id<DBListViewDelegate>delegate;
+@property UIScrollView *scrollView;
 @end
 
 NS_ASSUME_NONNULL_END

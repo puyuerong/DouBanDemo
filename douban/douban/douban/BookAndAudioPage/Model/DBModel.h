@@ -50,7 +50,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSMutableArray <CastsModel> *casts;
 @property NSString *original_title;
 @property NSString *collect_count;
-
+@property NSMutableArray *durations;
+@property NSString *listId;
 @end
 
 @interface DBModel : JSONModel

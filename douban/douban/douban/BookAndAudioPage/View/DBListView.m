@@ -12,11 +12,15 @@
 @implementation DBListView
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
-   
+    _scrollView = [[UIScrollView alloc] init];
+    [self addSubview:_scrollView];
     _listTableView = [[UITableView alloc] init];
-    [_listTableView registerClass:[DBListTableViewCell class] forCellReuseIdentifier:@"ListCell"];
-    [self addSubview:_listTableView];
+//    [_listTableView registerClass:[DBListTableViewCell class] forCellReuseIdentifier:@"ListCell"];
+    [_scrollView addSubview:_listTableView];
     
+//    _listTableView2 = [[UITableView alloc] init];
+//    [_listTableView2 registerClass:[DBListTableViewCell class] forCellReuseIdentifier:@"ListCell2"];
+//    [_scrollView addSubview:_listTableView2];
     _segmentControl = [[UISegmentedControl alloc] init];
     [_segmentControl insertSegmentWithTitle:@"正在热映" atIndex:0 animated:YES];
     [_segmentControl insertSegmentWithTitle:@"即将上映" atIndex:1 animated:YES];
@@ -45,6 +49,16 @@
     [_segmentControl setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blackColor], NSFontAttributeName:[UIFont systemFontOfSize:15]} forState:UIControlStateSelected];
     [_segmentControl setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor grayColor], NSFontAttributeName:[UIFont systemFontOfSize:15]} forState:UIControlStateNormal];
     
+    [_scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        int h = self.frame.size.height;
+        NSLog(@"%d", h);
+        int h2 = 0.05 * hight;
+        make.width.equalTo(@(width * 2));
+        make.height.equalTo(@(h - h2));
+        make.left.equalTo(self);
+        make.top.equalTo(self).offset(h2);
+    }];
+    
     [_listTableView mas_makeConstraints:^(MASConstraintMaker *make) {
         int h = self.frame.size.height;
         NSLog(@"%d", h);
@@ -54,6 +68,18 @@
         make.left.equalTo(self);
         make.top.equalTo(self).offset(h2);
     }];
+    _listTableView.tag = 1;
+    
+//    [_listTableView2 mas_makeConstraints:^(MASConstraintMaker *make) {
+//        int h = self.frame.size.height;
+//        NSLog(@"%d", h);
+//        int h2 = 0.05 * hight;
+//        make.width.equalTo(self);
+//        make.height.equalTo(@(h - h2));
+//        make.left.equalTo(self).offset(width);
+//        make.top.equalTo(self).offset(h2);
+//    }];
+//    _listTableView2.tag = 2;
 }
 
 /*

@@ -22,6 +22,15 @@ NS_ASSUME_NONNULL_BEGIN
 @property UILabel *titleLabel;
 @property UILabel *gradeLabel;
 @property UILabel *numberLabel;
+@property NSString *name;
+@property NSString *year;
+@property NSString *describe;
+@property UIProgressView *progressView1;
+@property UIProgressView *progressView2;
+@property UIProgressView *progressView3;
+@property UIProgressView *progressView4;
+@property UIProgressView *progressView5;
+@property UILabel *introduceLabel;
 @end
 
 NS_ASSUME_NONNULL_END

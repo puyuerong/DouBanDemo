@@ -6,15 +6,15 @@
 //  Copyright © 2019 蒲悦蓉. All rights reserved.
 //
 
-//#import <Foundation/Foundation.h>
-//#import "DBDetailModel.h"
-//NS_ASSUME_NONNULL_BEGIN
-//
-//typedef void(^successful)(DBDetailModel *returnModel);
-//
-//@interface DBDetailManger : NSObject
-//+ (instancetype)sharedMange;
-//- (void)postData:(successful)result id:(NSString*)idStr;
-//@end
-//
-//NS_ASSUME_NONNULL_END
+#import <Foundation/Foundation.h>
+#import "DetailModel.h"
+NS_ASSUME_NONNULL_BEGIN
+
+typedef void(^detailSuccessful)(DetailModel *returnModel);
+
+@interface DBDetailManger : NSObject
++ (instancetype)sharedMange;
+- (void)postData:(detailSuccessful)result id:(NSString*)idStr;
+@end
+
+NS_ASSUME_NONNULL_END

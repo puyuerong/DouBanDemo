@@ -17,9 +17,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DBListViewController : UIViewController
-<DBListViewDelegate, DBListViewDelegate, UITableViewDelegate, UITableViewDataSource>
+<DBListViewDelegate, DBListViewDelegate, UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate>
 @property DBModel *dataModel;
+@property DBModel *data2Model;
 @property NSInteger num;
+@property NSInteger select;
 - (void)postData;
 @end
 

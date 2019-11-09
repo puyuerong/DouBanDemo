@@ -7,6 +7,7 @@
 //
 
 #import "DBListViewController.h"
+#import "DBDetailViewController.h"
 
 @interface DBListViewController ()
 @property DBListView *listView;
@@ -17,6 +18,10 @@
 @property NSMutableArray *areaArray;
 @property NSMutableArray *descripeArray;
 @property NSMutableArray *peopleArray;
+@property NSInteger width;
+@property NSUInteger enterNumber;
+@property DetailModel *senderModel;
+@property NSString *selectId;
 @end
 /* 导航栏下划线去除*/
 /*获取导航栏和状态栏高度*/
@@ -24,10 +29,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"%ld", _select);
     // Do any additional setup after loading the view.
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     
+    _width = [UIScreen mainScreen].bounds.size.width;
+
     self.view.backgroundColor = [UIColor whiteColor];
     [self.navigationController setNavigationBarHidden:NO];
     self.title = @"院线电影";
@@ -52,6 +60,7 @@
     hight = hight - nHight - statusHight;
     _listView = [[DBListView alloc] init];
     [self.view addSubview:_listView];
+//    _listView.segmentControl.selectedSegmentIndex = _select - 1;
     [_listView mas_makeConstraints:^(MASConstraintMaker *make) {
         NSLog(@"%d", hight);
         make.width.equalTo(@(width));
@@ -59,17 +68,40 @@
         make.left.equalTo(self.view).offset(0);
         make.top.equalTo(self.view).offset(nHight + statusHight);
     }];
+    
+    [_listView.listTableView registerClass:[DBListTableViewCell class] forCellReuseIdentifier:@"ListCell"];
     _listView.listTableView.delegate = self;
     _listView.listTableView.dataSource = self;
-    [_listView.listTableView registerClass:[DBListTableViewCell class] forCellReuseIdentifier:@"ListCell"];
-
+    
     _listView.delegate = self;
     
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:nil];
+    _enterNumber = indexPath.row;
+    DBDetailViewController *detailVC = [[DBDetailViewController alloc] init];
+    detailVC.nowModel = [[DBNowModel alloc] init];
+    detailVC.nowModel = _dataModel.subjects[_enterNumber];
+    [self.navigationController pushViewController:detailVC animated:YES];
+}
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    if (scrollView.contentOffset.x > _width) {
+        _listView.segmentControl.selectedSegmentIndex = 1;
+    } else {
+        _listView.segmentControl.selectedSegmentIndex = 0;
+    }
+}
+
 - (void)postData {
+    DBNowModel *nowModel = [[DBNowModel alloc] init];
+    
     for (int i = 0; i < 10; i++) {
-        DBNowModel *nowModel = _dataModel.subjects[i];
+        if (_select == 1) {
+            nowModel = _dataModel.subjects[i];
+        } else {
+            nowModel = _data2Model.subjects[i];
+        }
         [self.imageArray addObject:nowModel.images.medium];
         [self.nameArray addObject:nowModel.title];
         [self.gradeArray addObject:nowModel.rating.average];
@@ -104,6 +136,9 @@
         [self.peopleArray addObject:nowModel.collect_count];
     }
 }
+
+
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
@@ -122,6 +157,8 @@
     float grade = [self Transform:cell.gradeLabel.text];
     int width = [UIScreen mainScreen].bounds.size.width;
     int width0 = 0.03 * width;
+    
+    [cell.starImageView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     for (int i = 0; i <= 4; i++) {
         UIImageView *imageView0 = [[UIImageView alloc] init];
         [cell.starImageView addSubview:imageView0];
@@ -189,6 +226,8 @@
     [self.navigationController setNavigationBarHidden:NO animated:nil];
     [self.navigationController pushViewController:detailVC animated:YES];
 }
+
+    
 /*
 #pragma mark - Navigation
 
