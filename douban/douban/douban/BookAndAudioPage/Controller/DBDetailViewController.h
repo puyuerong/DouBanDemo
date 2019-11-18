@@ -13,6 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DBDetailViewController : UIViewController
+<UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
 @property DBNowModel *nowModel;
 @property DetailModel *detailModel;
 @end

@@ -8,6 +8,8 @@
 
 #import "DBListViewController.h"
 #import "DBDetailViewController.h"
+#import "DBDetailManger.h"
+#import "DetailModel.h"
 
 @interface DBListViewController ()
 @property DBListView *listView;
@@ -22,6 +24,10 @@
 @property NSUInteger enterNumber;
 @property DetailModel *senderModel;
 @property NSString *selectId;
+@property NSMutableArray *idArray;
+@property DetailModel *idDetailModel;
+@property NSInteger tableViewPageCount;
+@property NSMutableArray *wishArray;
 @end
 /* 导航栏下划线去除*/
 /*获取导航栏和状态栏高度*/
@@ -52,7 +58,11 @@
     _gradeArray = [[NSMutableArray alloc] init];
     _descripeArray = [[NSMutableArray alloc] init];
     _peopleArray = [[NSMutableArray alloc] init];
+    _idArray = [[NSMutableArray alloc] init];
+    _wishArray = [[NSMutableArray alloc] init];
+    _tableViewPageCount = 1;
     [self postData];
+    [self tableViewAddData:_tableViewPageCount];
     int width = [UIScreen mainScreen].bounds.size.width;
     int hight = [UIScreen mainScreen].bounds.size.height;
     int nHight = self.navigationController.navigationBar.frame.size.height;
@@ -96,7 +106,7 @@
 - (void)postData {
     DBNowModel *nowModel = [[DBNowModel alloc] init];
     
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < [_dataModel.subjects count]; i++) {
         if (_select == 1) {
             nowModel = _dataModel.subjects[i];
         } else {
@@ -134,19 +144,54 @@
         }
         [self.descripeArray addObject:str];
         [self.peopleArray addObject:nowModel.collect_count];
+        [self.idArray addObject:nowModel.listId];
     }
 }
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    if (_tableViewPageCount * 7 > [_idArray count]) {
+        return;
+    }
+    NSInteger hight = [UIScreen mainScreen].bounds.size.height;
+    NSInteger h = (_tableViewPageCount * 7 - 1) * 0.217 * hight;
+    NSLog(@"%f", _listView.listTableView.contentOffset.y);
+    if (_listView.listTableView.contentOffset.y > h - hight) {        [self tableViewAddData:_tableViewPageCount + 1];
+    }
+}
+- (void)postDetail:(NSString*)idStr {
+    [[DBDetailManger sharedMange]postData:^(DetailModel * _Nonnull returnModel) {
+        self.idDetailModel = [[DetailModel alloc] init];
+        self.idDetailModel = returnModel;
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            [self.wishArray addObject:self.idDetailModel.wish_count];
+            if ([self.wishArray count] % 7 == 0) {
+                [self.listView.listTableView reloadData];
+            }
+        });
+    } id:idStr];
+}
 
+- (void)tableViewAddData:(NSInteger)i {
+    for (NSInteger j = (i - 1) * 7; j < (i - 1) * 7 + 7; j++) {
+        if (([_idArray count] - 1 < j) && (j > 7)) {
+            [_listView.listTableView reloadData];
+            return;
+        }
+        [self postDetail:self.idArray[j]];
+    }
+}
 
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 7;
+    return [_wishArray count];
 }
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     DBListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListCell" forIndexPath:indexPath];
+    if ([_imageArray count] - 1 < indexPath.row) {
+        return cell;
+    }
     NSString *str = _imageArray[indexPath.row];
     NSURL *url = [NSURL URLWithString:str];
     NSData *data = [NSData dataWithContentsOfURL:url];
@@ -184,7 +229,7 @@
 
     cell.detailLabel.text = _descripeArray[indexPath.row];
     [cell.buyButton setTitle:@"购票" forState:UIControlStateNormal];
-    cell.numberLabel.text = _peopleArray[indexPath.row];
+    cell.numberLabel.text = _wishArray[indexPath.row];
     return cell;
 }
 - (float)Transform:(NSString*)str {

@@ -47,3 +47,21 @@
     return  YES;
 }
 @end
+
+@implementation Directors1Model
++(BOOL)propertyIsOptional:(NSString *)propertyName{
+    return  YES;
+}
+@end
+
+@implementation Avatars1Model
++(BOOL)propertyIsOptional:(NSString *)propertyName{
+    return  YES;
+}
+@end
+
+@implementation Casts1Model
++(BOOL)propertyIsOptional:(NSString *)propertyName{
+    return  YES;
+}
+@end

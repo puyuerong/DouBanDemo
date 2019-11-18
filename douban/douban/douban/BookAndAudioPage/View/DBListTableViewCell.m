@@ -109,7 +109,7 @@
     _buyButton.layer.borderColor = [UIColor colorWithRed:0.94f green:0.39f blue:0.46f alpha:1.00f].CGColor;
     _buyButton.tintColor = [UIColor colorWithRed:0.94f green:0.39f blue:0.46f alpha:1.00f];
 
-    hight0 = 0.007 * hight;
+    hight0 = 0.017 * hight;
     top = 0.007 * hight;
     [_numberLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(@(width0));

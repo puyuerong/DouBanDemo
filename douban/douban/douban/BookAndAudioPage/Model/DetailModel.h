@@ -20,9 +20,32 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 @protocol StarDetailModel
 @end
+@protocol Directors1Model
+@end
+@protocol Avatars1Model
+@end
+@protocol Casts1Model
+@end
+
+
+
+@interface Avatars1Model : JSONModel
+@property NSString *medium;
+@end
+
+@interface Directors1Model : JSONModel
+@property NSString *name;
+@property Avatars1Model *avatars;
+@end
+
+@interface Casts1Model : JSONModel
+@property Avatars1Model *avatars;
+@property NSString *name;
+@end
+
 
 @interface RateModel : JSONModel
-@property NSInteger value;
+@property NSString *value;
 @end
 
 @interface StarDetailModel : JSONModel
@@ -47,6 +70,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSString *created_at;
 @property AuthorModel *author;
 @property RateModel *rating;
+@property NSString *useful_count;
 @end
 
 @interface DetailModel : JSONModel
@@ -54,6 +78,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSMutableArray<CommentModel>*popular_comments;
 @property StarRatingModel *rating;
 @property NSArray *countries;
+@property NSString *wish_count;
+@property NSMutableArray *tags;
+@property NSMutableArray<Directors1Model> *directors;
+@property NSMutableArray<Casts1Model> *casts;
 @end
 
 

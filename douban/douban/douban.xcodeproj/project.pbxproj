@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		680EB3C4238069DA004480D6 /* assess.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 680EB3C3238069DA004480D6 /* assess.jpeg */; };
 		6836A80E2376E347005C195B /* DetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6836A80D2376E347005C195B /* DetailModel.m */; };
-		6836A8112376F273005C195B /* had.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 6836A80F2376F272005C195B /* had.PNG */; };
-		6836A8122376F273005C195B /* want.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 6836A8102376F273005C195B /* want.PNG */; };
-		6836A8142376FB71005C195B /* assess.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 6836A8132376FB70005C195B /* assess.PNG */; };
 		684C99902359A2FE0068456D /* DBNothingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684C998F2359A2FE0068456D /* DBNothingViewController.m */; };
 		684EDDC5235208C80050EFB7 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDC4235208C70050EFB7 /* home.png */; };
 		684EDDCA23520CD40050EFB7 /* shu.png in Resources */ = {isa = PBXBuildFile; fileRef = 684EDDC623520CD30050EFB7 /* shu.png */; };
@@ -40,6 +38,8 @@
 		686FA50823588BC1009210FA /* 111.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 686FA50723588BC0009210FA /* 111.PNG */; };
 		686FA50A23588CD3009210FA /* kai.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 686FA50923588CD3009210FA /* kai.jpeg */; };
 		686FA50C23588DB9009210FA /* roy3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 686FA50B23588DB9009210FA /* roy3.JPG */; };
+		68A8918123813844006B689B /* ShortCommitTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A8918023813844006B689B /* ShortCommitTableViewCell.m */; };
+		68A89183238146BD006B689B /* zan.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A89182238146BC006B689B /* zan.png */; };
 		68D2BB1823506A4000B2FC77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB1723506A4000B2FC77 /* AppDelegate.m */; };
 		68D2BB1B23506A4000B2FC77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB1A23506A4000B2FC77 /* ViewController.m */; };
 		68D2BB1E23506A4000B2FC77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D2BB1C23506A4000B2FC77 /* Main.storyboard */; };
@@ -54,6 +54,8 @@
 		68D2BB5E235075CE00B2FC77 /* DBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB5D235075CE00B2FC77 /* DBMainViewController.m */; };
 		68D2BB642350768300B2FC77 /* DBHomePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB632350768300B2FC77 /* DBHomePageView.m */; };
 		68D2BB67235076B500B2FC77 /* DBHomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB66235076B500B2FC77 /* DBHomePageModel.m */; };
+		68F3E8E92380CB0D00C35D38 /* want.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 68F3E8E82380CB0D00C35D38 /* want.jpeg */; };
+		68F3E8EB2380CB1900C35D38 /* had.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 68F3E8EA2380CB1900C35D38 /* had.jpeg */; };
 		ADAF5D66B41D3B2D64F88497 /* libPods-douban.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6BF43981E988DAB9A17DBF /* libPods-douban.a */; };
 /* End PBXBuildFile section */
 
@@ -77,11 +79,9 @@
 /* Begin PBXFileReference section */
 		1B9A0675EC8F7126B4592BB1 /* Pods-douban.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douban.debug.xcconfig"; path = "Target Support Files/Pods-douban/Pods-douban.debug.xcconfig"; sourceTree = "<group>"; };
 		3C6BF43981E988DAB9A17DBF /* libPods-douban.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-douban.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		680EB3C3238069DA004480D6 /* assess.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = assess.jpeg; sourceTree = "<group>"; };
 		6836A80C2376E347005C195B /* DetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailModel.h; sourceTree = "<group>"; };
 		6836A80D2376E347005C195B /* DetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailModel.m; sourceTree = "<group>"; };
-		6836A80F2376F272005C195B /* had.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = had.PNG; sourceTree = "<group>"; };
-		6836A8102376F273005C195B /* want.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = want.PNG; sourceTree = "<group>"; };
-		6836A8132376FB70005C195B /* assess.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = assess.PNG; sourceTree = "<group>"; };
 		684C998E2359A2FE0068456D /* DBNothingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBNothingViewController.h; sourceTree = "<group>"; };
 		684C998F2359A2FE0068456D /* DBNothingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBNothingViewController.m; sourceTree = "<group>"; };
 		684EDDC4235208C70050EFB7 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
@@ -125,6 +125,9 @@
 		686FA50723588BC0009210FA /* 111.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 111.PNG; sourceTree = "<group>"; };
 		686FA50923588CD3009210FA /* kai.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kai.jpeg; sourceTree = "<group>"; };
 		686FA50B23588DB9009210FA /* roy3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roy3.JPG; sourceTree = "<group>"; };
+		68A8917F23813844006B689B /* ShortCommitTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShortCommitTableViewCell.h; sourceTree = "<group>"; };
+		68A8918023813844006B689B /* ShortCommitTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShortCommitTableViewCell.m; sourceTree = "<group>"; };
+		68A89182238146BC006B689B /* zan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zan.png; sourceTree = "<group>"; };
 		68D2BB1323506A4000B2FC77 /* douban.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = douban.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D2BB1623506A4000B2FC77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		68D2BB1723506A4000B2FC77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 		68D2BB632350768300B2FC77 /* DBHomePageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBHomePageView.m; sourceTree = "<group>"; };
 		68D2BB65235076B500B2FC77 /* DBHomePageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBHomePageModel.h; sourceTree = "<group>"; };
 		68D2BB66235076B500B2FC77 /* DBHomePageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBHomePageModel.m; sourceTree = "<group>"; };
+		68F3E8E82380CB0D00C35D38 /* want.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = want.jpeg; sourceTree = "<group>"; };
+		68F3E8EA2380CB1900C35D38 /* had.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = had.jpeg; sourceTree = "<group>"; };
 		729E5E826500B1CDC7BD8F9A /* Pods-douban.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douban.release.xcconfig"; path = "Target Support Files/Pods-douban/Pods-douban.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -253,12 +258,13 @@
 		685FD76B236DF10000B19059 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				6836A8132376FB70005C195B /* assess.PNG */,
-				6836A80F2376F272005C195B /* had.PNG */,
-				6836A8102376F273005C195B /* want.PNG */,
+				680EB3C3238069DA004480D6 /* assess.jpeg */,
+				68A89182238146BC006B689B /* zan.png */,
 				685FD76C236DF10000B19059 /* code.png */,
+				68F3E8EA2380CB1900C35D38 /* had.jpeg */,
 				685FD76D236DF10000B19059 /* mail.png */,
 				685FD76E236DF10000B19059 /* search.png */,
+				68F3E8E82380CB0D00C35D38 /* want.jpeg */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -278,6 +284,8 @@
 				685FD77B236DF10000B19059 /* DBMainTableViewCell.m */,
 				685FD77C236DF10000B19059 /* WillTableViewCell.h */,
 				685FD77D236DF10000B19059 /* WillTableViewCell.m */,
+				68A8917F23813844006B689B /* ShortCommitTableViewCell.h */,
+				68A8918023813844006B689B /* ShortCommitTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -523,7 +531,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6836A8112376F273005C195B /* had.PNG in Resources */,
 				684EDDCA23520CD40050EFB7 /* shu.png in Resources */,
 				685FD787236DF10000B19059 /* search.png in Resources */,
 				686BD5DF235B6BA00005E36C /* allStar.png in Resources */,
@@ -532,18 +539,20 @@
 				685FD750236D78E500B19059 /* NULL.jpg in Resources */,
 				686FA50A23588CD3009210FA /* kai.jpeg in Resources */,
 				685FD786236DF10000B19059 /* mail.png in Resources */,
+				68F3E8EB2380CB1900C35D38 /* had.jpeg in Resources */,
 				685FD785236DF10000B19059 /* code.png in Resources */,
 				686BD5E0235B6BA00005E36C /* emptyStar.png in Resources */,
 				686FA50823588BC1009210FA /* 111.PNG in Resources */,
+				68F3E8E92380CB0D00C35D38 /* want.jpeg in Resources */,
 				686BD5DE235B6BA00005E36C /* halfStar.png in Resources */,
-				6836A8122376F273005C195B /* want.PNG in Resources */,
 				684EDDCD23520CD40050EFB7 /* group.png in Resources */,
 				68D2BB2323506A4800B2FC77 /* LaunchScreen.storyboard in Resources */,
 				684EDDC5235208C80050EFB7 /* home.png in Resources */,
 				68D2BB2023506A4800B2FC77 /* Assets.xcassets in Resources */,
+				680EB3C4238069DA004480D6 /* assess.jpeg in Resources */,
 				686FA50C23588DB9009210FA /* roy3.JPG in Resources */,
-				6836A8142376FB71005C195B /* assess.PNG in Resources */,
 				68D2BB1E23506A4000B2FC77 /* Main.storyboard in Resources */,
+				68A89183238146BD006B689B /* zan.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +612,7 @@
 				685FD782236DF10000B19059 /* DBBookAndAudioModel.m in Sources */,
 				685FD78E236DF10000B19059 /* WillTableViewCell.m in Sources */,
 				68D2BB5A235075A300B2FC77 /* DBMarketViewController.m in Sources */,
+				68A8918123813844006B689B /* ShortCommitTableViewCell.m in Sources */,
 				68D2BB5E235075CE00B2FC77 /* DBMainViewController.m in Sources */,
 				685FD788236DF10000B19059 /* DBBookAndAudioView.m in Sources */,
 				685FD78B236DF10000B19059 /* DBListView.m in Sources */,

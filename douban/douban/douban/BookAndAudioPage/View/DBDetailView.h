@@ -31,6 +31,22 @@ NS_ASSUME_NONNULL_BEGIN
 @property UIProgressView *progressView4;
 @property UIProgressView *progressView5;
 @property UILabel *introduceLabel;
+@property NSString *introduceStr;
+
+@property UIScrollView *actorScrollView;
+@property UIScrollView *pictureScrollView;
+@property UILabel *titleLabel1;
+@property UILabel *titleLabel2;
+@property UILabel *allLabel1;
+@property UILabel *allLabel2;
+
+@property UIScrollView *typeScrollView;
+@property UILabel *includeLabel;
+@property UIImageView *backImageVivew;
+@property UILabel *hideLabel1;
+@property UILabel *hideLabel2;
+
+@property UITableView *shortCommitTableView;
 @end
 
 NS_ASSUME_NONNULL_END
