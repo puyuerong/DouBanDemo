@@ -15,7 +15,7 @@
 #import "DBManger.h"
 static DBManger *manger;
 
-#define nowHttp "https://douban-api.uieee.com"
+#define nowHttp "https://douban.uieee.com"
 @implementation DBManger
 
 

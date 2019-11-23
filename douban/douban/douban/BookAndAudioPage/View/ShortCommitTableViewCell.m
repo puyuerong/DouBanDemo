@@ -15,15 +15,18 @@
     _touImageView = [[UIImageView alloc] init];
     _nameLabel = [[UILabel alloc] init];
     _commitLabel = [[UILabel alloc] init];
+    _commitLabel.numberOfLines = 6;
     _timeLabel = [[UILabel alloc] init];
     _zanButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     _starImageView = [[UIImageView alloc] init];
+    _numberButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [self addSubview:_touImageView];
     [self addSubview:_nameLabel];
     [self addSubview:_starImageView];
     [self addSubview:_timeLabel];
     [self addSubview:_commitLabel];
     [self addSubview:_zanButton];
+    [self addSubview:_numberButton];
     return self;
 }
 - (void)layoutSubviews {
@@ -55,7 +58,7 @@
     
     
     width0 = 0.186 * width;
-    int hight0 = 0.0105 * hight;
+    int hight0 = 0.014 * hight;
     [_starImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(@(width0));
         make.height.equalTo(@(hight0));
@@ -63,7 +66,7 @@
         make.top.equalTo(self.nameLabel.mas_bottom).offset(4);
     }];
     
-    width0 = 0.187 * width;
+    width0 = 0.19 * width;
     [_timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(@(100));
         make.height.equalTo(@(hight0));
@@ -73,17 +76,15 @@
     _timeLabel.textColor = [UIColor grayColor];
     _timeLabel.font = [UIFont systemFontOfSize:13];
     
+    _commitLabel.font = [UIFont systemFontOfSize:15];
+    _commitLabel.textColor = [UIColor whiteColor];
+//    _commitLabel.numberOfLines = 6;
     [_commitLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.touImageView.mas_left).offset(0);
         make.top.equalTo(self.touImageView.mas_bottom).offset(15);
     }];
-    _commitLabel.font = [UIFont systemFontOfSize:15];
-    _commitLabel.textColor = [UIColor whiteColor];
-    _commitLabel.numberOfLines = 0;
     
-    
-    
-    
+
     width0 = 0.107 * width;
     hight0 = 0.03 * hight;
     [_zanButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -93,8 +94,18 @@
         make.top.equalTo(self.commitLabel.mas_bottom).offset(10);
     }];
     _zanButton.tintColor = [UIColor grayColor];
-    _zanButton.titleLabel.font = [UIFont systemFontOfSize:13];
     [_zanButton setImage:[UIImage imageNamed:@"zan"] forState:UIControlStateNormal];
+    
+    [_numberButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.equalTo(@(hight0 + 30));
+        make.height.equalTo(@(hight0));
+        make.left.equalTo(self.touImageView.mas_left).offset(hight0);
+        make.top.equalTo(self.commitLabel.mas_bottom).offset(10);
+    }];
+    _numberButton.tintColor = [UIColor grayColor];
+    _numberButton.titleLabel.font = [UIFont systemFontOfSize:13];
+    _numberButton.titleLabel.textAlignment = NSTextAlignmentLeft;
+    
 }
 
 

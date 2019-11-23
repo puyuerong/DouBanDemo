@@ -71,11 +71,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property AuthorModel *author;
 @property RateModel *rating;
 @property NSString *useful_count;
+@property NSString *title;
+@property NSString *summary;
 @end
 
 @interface DetailModel : JSONModel
 @property NSString *summary;
 @property NSMutableArray<CommentModel>*popular_comments;
+@property NSMutableArray<CommentModel>*popular_reviews;
 @property StarRatingModel *rating;
 @property NSArray *countries;
 @property NSString *wish_count;

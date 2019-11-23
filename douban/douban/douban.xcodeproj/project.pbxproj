@@ -38,6 +38,7 @@
 		686FA50823588BC1009210FA /* 111.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 686FA50723588BC0009210FA /* 111.PNG */; };
 		686FA50A23588CD3009210FA /* kai.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 686FA50923588CD3009210FA /* kai.jpeg */; };
 		686FA50C23588DB9009210FA /* roy3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 686FA50B23588DB9009210FA /* roy3.JPG */; };
+		68811F7423899AF000B50771 /* LongCommitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68811F7323899AF000B50771 /* LongCommitModel.m */; };
 		68A8918123813844006B689B /* ShortCommitTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A8918023813844006B689B /* ShortCommitTableViewCell.m */; };
 		68A89183238146BD006B689B /* zan.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A89182238146BC006B689B /* zan.png */; };
 		68D2BB1823506A4000B2FC77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D2BB1723506A4000B2FC77 /* AppDelegate.m */; };
@@ -125,6 +126,8 @@
 		686FA50723588BC0009210FA /* 111.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 111.PNG; sourceTree = "<group>"; };
 		686FA50923588CD3009210FA /* kai.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kai.jpeg; sourceTree = "<group>"; };
 		686FA50B23588DB9009210FA /* roy3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roy3.JPG; sourceTree = "<group>"; };
+		68811F7223899AF000B50771 /* LongCommitModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongCommitModel.h; sourceTree = "<group>"; };
+		68811F7323899AF000B50771 /* LongCommitModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongCommitModel.m; sourceTree = "<group>"; };
 		68A8917F23813844006B689B /* ShortCommitTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShortCommitTableViewCell.h; sourceTree = "<group>"; };
 		68A8918023813844006B689B /* ShortCommitTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShortCommitTableViewCell.m; sourceTree = "<group>"; };
 		68A89182238146BC006B689B /* zan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zan.png; sourceTree = "<group>"; };
@@ -251,6 +254,8 @@
 				685FD76A236DF10000B19059 /* DBModel.m */,
 				6836A80C2376E347005C195B /* DetailModel.h */,
 				6836A80D2376E347005C195B /* DetailModel.m */,
+				68811F7223899AF000B50771 /* LongCommitModel.h */,
+				68811F7323899AF000B50771 /* LongCommitModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -618,6 +623,7 @@
 				685FD78B236DF10000B19059 /* DBListView.m in Sources */,
 				685FD77E236DF10000B19059 /* DBBookAndAudioViewController.m in Sources */,
 				685FD77F236DF10000B19059 /* DBDetailManger.m in Sources */,
+				68811F7423899AF000B50771 /* LongCommitModel.m in Sources */,
 				68D2BB2623506A4800B2FC77 /* main.m in Sources */,
 				68D2BB642350768300B2FC77 /* DBHomePageView.m in Sources */,
 				68D2BB1823506A4000B2FC77 /* AppDelegate.m in Sources */,

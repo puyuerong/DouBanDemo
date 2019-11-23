@@ -23,6 +23,8 @@
 @property NSMutableArray *commitArray;
 @property NSMutableArray *timeArray;
 @property NSMutableArray *zanArray;
+@property BOOL select;
+@property NSInteger sizeHight;
 @end
 
 @implementation DBDetailViewController
@@ -37,6 +39,7 @@
     _commitArray = [[NSMutableArray alloc] init];
     _zanArray = [[NSMutableArray alloc] init];
     _timeArray = [[NSMutableArray alloc] init];
+    _select = YES;
     
     _width = [UIScreen mainScreen].bounds.size.width;
     _hight = [UIScreen mainScreen].bounds.size.height;
@@ -45,6 +48,7 @@
     _detailView = [[DBDetailView alloc] init];
     _detailView.name = _nowModel.title;
     _detailView.year = _nowModel.year;
+    _detailView.setTableViewSize = YES;
 
     _detailView.describe = @"";
     _detailView.describe = [_detailView.describe stringByAppendingString:@"/"];
@@ -125,21 +129,22 @@
     _detailView.progressView4.progress = [self Transform:self.detailModel.rating.details.list2] / sum;
     _detailView.progressView5.progress = [self Transform:self.detailModel.rating.details.list1] / sum;
 
-    _detailView.introduceStr = [NSString stringWithFormat:@"剧情简介%@", _detailModel.summary];
+    _detailView.introduceStr = [NSString stringWithFormat:@"剧情简介\n\n%@", _detailModel.summary];
     [_detailView layoutSubviews];
-    _detailView.introduceLabel.numberOfLines = 5;
-    [_detailView layoutSubviews];
+    _detailView.introduceLabel.numberOfLines = 6;
+//    [_detailView layoutSubviews];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [button setTitle:@"展开" forState:UIControlStateNormal];
     [button setTintColor:[UIColor grayColor]];
     [_detailView.introduceLabel addSubview:button];
-    int width0 = 0.08 * _width;
+    int width0 = 0.1 * _width;
     [button mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(@(width0));
         make.height.equalTo(@(width0));
         make.right.equalTo(self.detailView.introduceLabel.mas_right).offset(0);
-        make.bottom.equalTo(self.detailView.introduceLabel.mas_bottom).offset(0);
+        make.bottom.equalTo(self.detailView.introduceLabel.mas_bottom).offset(15);
     }];
+    [_detailView.introduceLabel setUserInteractionEnabled:YES];
     [button addTarget:self action:@selector(ClickPressOpen:) forControlEvents:UIControlEventTouchUpInside];
     
     int left;
@@ -259,7 +264,8 @@
         [_zanArray addObject:commit.useful_count];
         [_commitArray addObject:commit.content];
     }
-        
+    
+    _detailView.setTableViewSize = NO;
     [_detailView.shortCommitTableView reloadData];
     
 
@@ -272,7 +278,7 @@
     } else {
         t = [_detailModel.popular_comments count];
     }
-    return t - 1;
+    return t;
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -282,6 +288,10 @@
     if ([_timeArray count] == 0) {
         return cell;
     }
+    if (indexPath.row == 0) {
+        _sizeHight = 0;
+    }
+    cell.tag = 0;
     cell.backgroundColor = [UIColor colorWithRed:0.29f green:0.36f blue:0.39f alpha:1.00f];
     NSString *str = _touArray[indexPath.row];
     NSURL *url = [NSURL URLWithString:str];
@@ -314,20 +324,97 @@
             grade = grade - 2;
         }
     }
-    [cell.zanButton setTitle:_zanArray[indexPath.row] forState:UIControlStateNormal];
     cell.commitLabel.text = _commitArray[indexPath.row];
-    CGSize size = [cell.commitLabel.text boundingRectWithSize:CGSizeMake(250, 600) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:cell.commitLabel.font} context:nil].size;
-    
+    cell.commitLabel.numberOfLines = 6;
+    cell.commitLabel.font = [UIFont systemFontOfSize:15];
+    cell.commitLabel.textColor = [UIColor whiteColor];
+    CGSize size = [cell.commitLabel.text boundingRectWithSize:CGSizeMake(340, 600) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:cell.commitLabel.font} context:nil].size;
+    if (size.height > 0.17 * _hight) {
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        [cell addSubview:button];
+        [button addTarget:self action:@selector(CellPressClickOpen:) forControlEvents:UIControlEventTouchUpInside];
+        [button setTitle:@"展开" forState:UIControlStateNormal];
+        button.tintColor = [UIColor grayColor];
+        
+        [cell.commitLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.width.equalTo(@(self.width - 20));
+            make.height.equalTo(@(0.17 * self.hight));
+        }];
+        
+        [button mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.equalTo(@(50));
+            make.height.equalTo(@(20));
+            make.bottom.equalTo(cell.commitLabel.mas_bottom).offset(15);
+            make.right.equalTo(cell.commitLabel.mas_right).offset(8);
+        }];
+        _sizeHight += 0.33 * self.hight;
+        if (indexPath.row  == [_touArray count] - 1) {
+            [_detailView.shortCommitTableView mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.width.equalTo(@(self.width - 20));
+                make.height.equalTo(@(self.sizeHight + 20));
+                make.left.equalTo(self.detailView.scrollView.mas_left).offset(10);
+                make.top.equalTo(self.detailView.actorScrollView.mas_bottom).offset(10);
+            }];
+        }
+    } else {
+        [cell.commitLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.width.equalTo(@(size.width + 5));
+            make.height.equalTo(@(size.height + 5));
+        }];
+        _sizeHight += size.height + 0.16 * _hight;
+        if (indexPath.row  == [_touArray count] - 1) {
+            [_detailView.shortCommitTableView mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.width.equalTo(@(self.width - 20));
+                make.height.equalTo(@(self.sizeHight + 20));
+                make.left.equalTo(self.detailView.scrollView.mas_left).offset(10);
+                make.top.equalTo(self.detailView.actorScrollView.mas_bottom).offset(10);
+            }];
+        }
+    }
+    [cell.numberButton setTitle:_zanArray[indexPath.row] forState:UIControlStateNormal];
     cell.timeLabel.text = _timeArray[indexPath.row];
     return cell;
 
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 150;
+    UILabel *label = [[UILabel alloc] init];
+    label.text = _commitArray[indexPath.row];
+    label.font = [UIFont systemFontOfSize:15];
+    label.numberOfLines = 6;
+    CGSize size = [label.text boundingRectWithSize:CGSizeMake(340, 600) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:label.font} context:nil].size;
+    if ((size.height > 0.17 * _hight) && ([_detailView.shortCommitTableView cellForRowAtIndexPath:indexPath].tag != 1)) {
+        return 0.33 * _hight;
+    } else {
+        return size.height + 0.16 * _hight;
+    }
+    
 }
     
 
-
+- (void)CellPressClickOpen:(UIButton*)btn {
+    CGPoint point = btn.center;
+    point = [_detailView.shortCommitTableView convertPoint:point fromView:btn.superview];
+    NSIndexPath *indexpath = [_detailView.shortCommitTableView indexPathForRowAtPoint:point];
+    ShortCommitTableViewCell *cell = [_detailView.shortCommitTableView cellForRowAtIndexPath:indexpath];
+    cell.commitLabel.numberOfLines = 0;
+    CGSize size = [cell.commitLabel.text boundingRectWithSize:CGSizeMake(340, 600) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:cell.commitLabel.font} context:nil].size;
+    [cell.commitLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.width.equalTo(@(size.width));
+        make.height.equalTo(@(size.height));
+    }];
+    cell.tag = 1;
+    [btn removeFromSuperview];
+    [_detailView.shortCommitTableView beginUpdates];
+    [_detailView.shortCommitTableView endUpdates];
+    self.sizeHight = self.sizeHight + (size.height - 0.17 * _hight);
+    [_detailView.shortCommitTableView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.width.equalTo(@(self.width - 20));
+        make.height.equalTo(@(self.sizeHight + 20));
+        make.left.equalTo(self.detailView.scrollView.mas_left).offset(10);
+        make.top.equalTo(self.detailView.actorScrollView.mas_bottom).offset(10);
+    }];
+    
+}
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
@@ -354,8 +441,6 @@
     self.title = @"电影";
     
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor]; //设置颜色
-//    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
-//    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60) forBarMetrics:UIBarMetricsDefault];
 }
 
 - (void)ClickPressOpen: (UIButton*)btn {
@@ -382,9 +467,6 @@
     NSLog(@"end = %f", sum);
     return sum;
 }
-
-
-
 
 /*
 #pragma mark - Navigation

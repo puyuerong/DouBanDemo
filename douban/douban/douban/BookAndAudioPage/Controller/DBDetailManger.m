@@ -15,7 +15,7 @@
 
 #import "DBDetailManger.h"
 
-#define FrontApi "https://douban-api.uieee.com"
+#define FrontApi "https://douban.uieee.com"
 static DBDetailManger *manger;
 @implementation DBDetailManger
 

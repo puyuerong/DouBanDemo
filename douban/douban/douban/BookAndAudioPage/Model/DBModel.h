@@ -56,6 +56,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DBModel : JSONModel
 @property NSArray<DBNowModel>* subjects;
+@property NSInteger total;
 @end
 
 

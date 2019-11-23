@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property UILabel *timeLabel;
 @property UILabel *commitLabel;
 @property UIButton *zanButton;
+@property UIButton *numberButton;
 @end
 
 NS_ASSUME_NONNULL_END

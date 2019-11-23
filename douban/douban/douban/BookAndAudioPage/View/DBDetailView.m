@@ -291,21 +291,29 @@
     }];
  
     _introduceLabel.textColor = [UIColor whiteColor];
-    _introduceLabel.font = [UIFont systemFontOfSize:20];
+    _introduceLabel.font = [UIFont systemFontOfSize:15];
 //    _introduceLabel.numberOfLines = 0;
     _introduceLabel.text = _introduceStr;
     NSLog(@"%@", _introduceStr);
-    size = [_introduceLabel.text boundingRectWithSize:CGSizeMake(355, 600) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:_introduceLabel.font} context:nil].size;
-    float w = size.width;
-    float h = size.height;
+    size = [_introduceLabel.text boundingRectWithSize:CGSizeMake(355, 400) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:_introduceLabel.font} context:nil].size;
     NSLog(@"%@", _introduceLabel.text);
-    [_introduceLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.equalTo(@(size.width + 10));
-        make.height.equalTo(@(size.height + 20));
-        make.left.equalTo(self.scrollView.mas_left).offset(10);
-        make.top.equalTo(self.typeScrollView.mas_bottom).offset(30);
-        
-    }];
+    width0 = 0.95 * width;
+    hight0 = 0.21 *hight;
+    if (_introduceLabel.numberOfLines == 6) {
+        [_introduceLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.width.equalTo(@(width0));
+            make.height.equalTo(@(hight0));
+            make.left.equalTo(self.scrollView.mas_left).offset(10);
+            make.top.equalTo(self.typeScrollView.mas_bottom).offset(30);
+        }];
+    } else {
+        [_introduceLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.width.equalTo(@(size.width));
+            make.height.equalTo(@(size.height + 20));
+            make.left.equalTo(self.scrollView.mas_left).offset(10);
+            make.top.equalTo(self.typeScrollView.mas_bottom).offset(30);
+        }];
+    }
 
     hight0 = 0.188 * hight;
     _actorScrollView.contentSize = CGSizeMake(width * 2, hight0);
@@ -327,12 +335,15 @@
         make.top.equalTo(self.introduceLabel.mas_bottom).offset(20);
     }];
     
-    [_shortCommitTableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.equalTo(self.scrollView.mas_width);
-        make.height.equalTo(self.scrollView.mas_height);
-        make.left.equalTo(self.scrollView.mas_left).offset(10);
-        make.top.equalTo(self.actorScrollView.mas_bottom).offset(10);
-    }];
+    if (_setTableViewSize == YES) {
+        width0 = 0.95 * width;
+        [_shortCommitTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.equalTo(@(width0));
+            make.height.equalTo(self.scrollView.mas_height);
+            make.left.equalTo(self.scrollView.mas_left).offset(10);
+            make.top.equalTo(self.actorScrollView.mas_bottom).offset(10);
+        }];
+    }
     _shortCommitTableView.backgroundColor = [UIColor colorWithRed:0.29f green:0.36f blue:0.39f alpha:1.00f];
     
     

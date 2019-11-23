@@ -17,6 +17,8 @@
 @property NSInteger width;
 @property NSInteger hight;
 @property NSInteger number;
+@property NSInteger nowTotal;
+@property NSInteger willTotal;
 @end
 
 @implementation DBBookAndAudioViewController
@@ -39,7 +41,6 @@
     _bookAndAudioView = [[DBBookAndAudioView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.view addSubview:_bookAndAudioView];
     _bookAndAudioView.delegate = self;
-    
     [_bookAndAudioView.movieTableView registerClass:[DBMainTableViewCell class] forCellReuseIdentifier:@"mainCell"];
     [_bookAndAudioView.movieTableView2 registerClass:[WillTableViewCell class] forCellReuseIdentifier:@"mainCell2"];
     _bookAndAudioView.movieTableView.delegate = self;
@@ -60,13 +61,15 @@
     [tableView deselectRowAtIndexPath:indexPath animated:nil];
 }
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
-    if (scrollView.contentOffset.x > _width) {
+    if (scrollView.contentOffset.x > 100) {
         if ([_titleArray2 count] == 0) {
             [self postDataType:@"will"];
         }
         _bookAndAudioView.segmentController.selectedSegmentIndex = 1;
+        [_bookAndAudioView.allButton setTitle:[NSString stringWithFormat:@"全部%ld部>", _willTotal] forState:UIControlStateNormal];
     } else {
         _bookAndAudioView.segmentController.selectedSegmentIndex = 0;
+        [self.bookAndAudioView.allButton setTitle:[NSString stringWithFormat:@"全部%ld部>", _nowTotal] forState:UIControlStateNormal];
     }
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -113,8 +116,10 @@
         dispatch_sync(dispatch_get_main_queue(), ^{
             if ([select isEqualToString:@"now"]) {
                 [self.bookAndAudioView.movieTableView reloadData];
+                self.nowTotal = resuleModel.total;
             } else {
                 [self.bookAndAudioView.movieTableView2 reloadData];
+                self.willTotal = resuleModel.total;
             }
         });
     } type:select];
@@ -318,11 +323,13 @@
 - (void)ClickPressScroll:(UISegmentedControl *)segmentControl {
     if (segmentControl.selectedSegmentIndex == 0) {
         [_bookAndAudioView.scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
+        [self.bookAndAudioView.allButton setTitle:[NSString stringWithFormat:@"全部%ld部", _nowTotal] forState:UIControlStateNormal];
     } else {
         if ([_titleArray2 count] == 0) {
             [self postDataType:@"will"];
         }
         [_bookAndAudioView.scrollView setContentOffset:CGPointMake(_width, 0) animated:YES];
+        [_bookAndAudioView.allButton setTitle:[NSString stringWithFormat:@"全部%ld部", _willTotal] forState:UIControlStateNormal];
     }
 }
 - (void)viewWillAppear:(BOOL)animated {

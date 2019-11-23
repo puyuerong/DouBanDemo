@@ -47,6 +47,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property UILabel *hideLabel2;
 
 @property UITableView *shortCommitTableView;
+
+@property BOOL setTableViewSize;
 @end
 
 NS_ASSUME_NONNULL_END
